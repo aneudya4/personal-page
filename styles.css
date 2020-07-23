@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+hr {
+  width: 50%;
+  border: 1px solid black;
+}
+
+header,
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+}
+
+h1,
+h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+header p {
+  color: coral;
+}
+
+p,
+ul {
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
+    Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+}
+
+.image-container {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.image-container img {
+  width: 50%;
+  height: 500px;
+}
+
+.intro {
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px;
+}
+
+.intro p {
+  text-align: left;
+  color: rgb(117, 111, 94);
+}
+
+.intro p em {
+  color: salmon;
+}
+
+.intro ul {
+  color: coral;
+}
+.intro h2 {
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+  padding: 20px;
+}
+
+.about p {
+  color: rgb(117, 111, 94);
+  text-align: left;
+  width: 50%;
+  margin: 15px auto;
+}
+
+.about p strong {
+  font-size: 18px;
+  color: salmon;
+}
+.contact {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact p {
+  color: rgb(117, 111, 94);
+}
+
+a {
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(102, 138, 204);
+}
+
+a:hover {
+  color: rgb(16, 72, 177);
+}
+
+a:active {
+  color: lightgreen;
+  color: rgb(7, 29, 70);
+}
