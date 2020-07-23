@@ -27,8 +27,8 @@ footer {
 
 h1,
 h2 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 header h1 {
@@ -41,7 +41,7 @@ header p {
 
 p,
 ul {
-  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
+  font-family: "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
     Geneva, Verdana, sans-serif;
   text-transform: capitalize;
 }
@@ -122,6 +122,5 @@ a:hover {
 }
 
 a:active {
-  color: lightgreen;
   color: rgb(7, 29, 70);
 }
