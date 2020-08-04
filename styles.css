@@ -57,7 +57,12 @@ main h2 {
   font-size: 18px;
   font-weight: lighter;
 }
-
+.intro-story p a {
+  border-bottom: 1px solid cornflowerblue;
+  display: inline-block;
+  padding-bottom: 2px;
+  font-size: 18px;
+}
 .about-me {
   background: whitesmoke;
   padding: 30px;
