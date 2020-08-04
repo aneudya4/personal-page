@@ -77,10 +77,10 @@ main p {
   font-weight: lighter;
 }
 
-.about-story h2 {
+.about-me .about-story h2 {
   text-align: left;
 }
-.about-story p {
+.about-me .about-story p {
   font-size: 20px;
   padding-right: 20px;
 }
@@ -135,6 +135,7 @@ main p {
   font-size: 20px;
 }
 
+/* links styling */
 a {
   color: cornflowerblue;
   text-decoration: none;
@@ -154,6 +155,11 @@ a:active {
 }
 
 /* Media queries */
+@media all and (max-width: 1088px) {
+  .projects {
+    justify-content: space-around;
+  }
+}
 
 @media all and (max-width: 800px) {
   main .section-wrapper:first-of-type {
