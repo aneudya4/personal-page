@@ -4,6 +4,7 @@
   font-family: helvetica, monaco, sans-serif;
 }
 
+/* styles for footer and header */
 header,
 footer {
   background-color: black;
@@ -11,16 +12,20 @@ footer {
   padding: 10px 0;
   color: white;
 }
-
+/* set color for all p tags in the page */
 main p {
   color: rgb(117, 111, 94);
 }
 
-main h2 {
-  font-size: 30px;
+.section-wrapper h2 {
+  text-align: center;
   font-weight: lighter;
+  font-size: 40px;
 }
 
+/* sets h2 styles */
+
+/* wrappper container fo */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -29,7 +34,6 @@ main h2 {
 
 .intro {
   width: 80%;
-  justify-content: center;
   padding: 30px;
   margin: 0 auto;
 }
@@ -40,7 +44,7 @@ main h2 {
 
 .img-container {
   flex: 1;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .img-container img {
@@ -50,36 +54,31 @@ main h2 {
 
 .intro-story {
   flex: 1;
-  margin-left: 10px;
+  font-size: 20px;
 }
 
 .intro-story p {
-  font-size: 18px;
   font-weight: lighter;
 }
 .intro-story p a {
   border-bottom: 1px solid cornflowerblue;
-  display: inline-block;
   padding-bottom: 2px;
-  font-size: 18px;
 }
 .about-me {
   background: whitesmoke;
   padding: 30px;
+  text-align: justify;
 }
 .about-story {
   flex: 2;
+  font-weight: lighter;
 }
 
-.about-story {
-  font-size: 30px;
-}
-.about-story h3 {
-  font-weight: bold;
+.about-story h2 {
+  text-align: left;
 }
 .about-story p {
-  font-size: 18px;
-  font-weight: lighter;
+  font-size: 20px;
   padding-right: 20px;
 }
 .about-story p strong {
@@ -89,16 +88,11 @@ main h2 {
 .about-me .img-container {
   flex: 1;
   flex-basis: 130px;
-  align-self: center;
+  align-self: flex-end;
 }
 
 .about-me .img-container img {
   width: 100%;
-}
-
-.section-wrapper h2 {
-  text-align: center;
-  font-size: 40px;
 }
 
 .projects {
@@ -107,7 +101,7 @@ main h2 {
 }
 
 .projects .project {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   flex-basis: 350px;
   padding: 20px;
   background: whitesmoke;
@@ -115,7 +109,6 @@ main h2 {
 
 .projects .project img {
   width: 100%;
-  object-fit: cover;
 }
 
 .projects-links {
@@ -135,12 +128,8 @@ main h2 {
   background: whitesmoke;
 }
 
-.contact ul li {
-  padding: 0;
-}
-
 .contact p {
-  font-size: 19px;
+  font-size: 20px;
 }
 
 a {
