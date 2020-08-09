@@ -37,7 +37,6 @@ header nav ul li {
 
 nav ul li a {
   font-size: 20px;
-  /* margin: 10px 20px; */
 }
 header nav ul li a:hover {
   border-bottom: 1px solid whitesmoke;
@@ -188,6 +187,9 @@ form textarea {
   margin-bottom: 20px;
 }
 
+form textarea {
+  height: 140px;
+}
 .btn {
   background: cornflowerblue;
   border: 0;
