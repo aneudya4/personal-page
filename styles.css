@@ -9,9 +9,41 @@ header,
 footer {
   background-color: black;
   text-align: center;
-  padding: 10px 0;
   color: white;
+  padding: 10px 0;
 }
+header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+header h1 {
+  margin-right: auto;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  /* padding: 0 10px; */
+  padding-left: 50px;
+}
+
+nav ul li a {
+  font-size: 20px;
+  /* margin: 10px 20px; */
+}
+header nav ul li a:hover {
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 4px;
+}
+
 /* set color for all p tags in the page */
 main p {
   color: rgb(117, 111, 94);
@@ -127,12 +159,36 @@ main p {
 .contact {
   flex-direction: column;
   align-content: center;
+  text-align: center;
   padding: 20px;
   background: whitesmoke;
 }
 
 .contact p {
   font-size: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-icons i {
+  font-size: 40px;
+}
+
+form {
+  text-align: left;
+}
+
+label {
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 /* links styling */
@@ -143,11 +199,11 @@ a {
 }
 
 a:visited {
-  color: rgb(102, 138, 204);
+  color: cornflowerblue;
 }
 
 a:hover {
-  color: rgb(8, 39, 97);
+  color: rgb(17, 85, 211);
 }
 
 a:active {
@@ -164,6 +220,18 @@ a:active {
 @media all and (max-width: 800px) {
   main .section-wrapper:first-of-type {
     margin-bottom: 0px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  header h1 {
+    margin-right: 0;
+  }
+
+  header nav ul li:first-of-type {
+    padding-left: 0;
   }
 
   .intro {

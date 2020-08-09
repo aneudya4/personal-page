@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      src="https://kit.fontawesome.com/4fbeabb42e.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Aneudy Adames</title>
@@ -17,7 +21,13 @@
   <body>
     <header>
       <h1>Aneudy Adames</h1>
-      <p>Software Developer</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- main part of website -->
     <main>
@@ -46,7 +56,7 @@
 
             <p>
               Take a look at my website and feel free to
-              <a href="mailto:a4aneudy@gmail.com">Contact Me!</a>
+              <a href="mailto:a4aneudy@gmail.com">Email Me!</a>
             </p>
           </div>
         </article>
@@ -55,7 +65,7 @@
       <!-- about me  -->
 
       <div class="section-wrapper">
-        <article class="about-me flex-container">
+        <article id="about" class="about-me flex-container">
           <div class="about-story">
             <h2>About Me</h2>
             <p>
@@ -86,7 +96,7 @@
       <!-- projects -->
       <div class="section-wrapper">
         <h2>Projects</h2>
-        <article class="projects flex-container">
+        <article id="projects" class="projects flex-container">
           <!--projects have placeholder content -->
           <div class="project">
             <img src="./images/undraw_code_inspection_bdl7.svg" alt="" />
@@ -149,15 +159,47 @@
           <p>
             Can't wait to meet you. Feel free to contact me or follow me at
           </p>
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/aneudy-adames-600441158/"
-                >LinkedIn</a
-              >
-            </li>
-            <li><a href="https://github.com/aneudya4">Github</a></li>
-            <li><a href="mailto:a4aneudy@gmail.com">Email me here!</a></li>
-          </ul>
+          <div class="social-icons">
+            <a
+              href="https://www.linkedin.com/in/aneudy-adames-600441158/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/aneudya4" target="_blank"
+              ><i class="fab fa-github-square"></i
+            ></a>
+            <a href="mailto:a4aneudy@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+          <!-- CONTACT FORMS -->
+          <form action="https://formspree.io/xknqenpp" method="POST">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Jhon Doe"
+              required
+            />
+            <label for="email">Email:</label>
+
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="jhondoe@gmail.com"
+              required
+            />
+            <label for="user-message">Your Message:</label>
+            <textarea
+              name="user-message"
+              id="user-message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </form>
         </article>
       </div>
     </main>
