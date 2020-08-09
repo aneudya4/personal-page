@@ -263,6 +263,10 @@ a:active {
     flex-direction: column;
     flex-wrap: nowrap;
   }
+
+  .about-me {
+    text-align: left;
+  }
   .about-me > .about-story {
     flex: 1;
   }
