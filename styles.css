@@ -181,14 +181,25 @@ form {
   text-align: left;
 }
 
-label {
-}
-
 form input,
 form textarea {
   display: block;
   width: 100%;
   margin-bottom: 20px;
+}
+
+.btn {
+  background: cornflowerblue;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  background: rgb(17, 85, 211);
 }
 
 /* links styling */
