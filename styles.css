@@ -1,26 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sriracha&display=swap');
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: helvetica, monaco, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* styles for footer and header */
+/* styles for footer and header  */
+/* mobile first */
 header,
 footer {
   background-color: black;
   text-align: center;
   color: white;
-  padding: 10px 0;
+  padding: 30px 0;
 }
-header {
+h2 {
+  font-weight: lighter;
+  font-size: 37px;
+}
+
+.flex-container {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 0 10px;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+header {
+  padding: 30px 0;
 }
 
 header h1 {
-  margin-right: auto;
+  font-size: 40px;
+  font-family: 'Sriracha', cursive;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
 }
 
 header nav ul {
@@ -30,11 +45,14 @@ header nav ul {
   display: flex;
 }
 
-header nav ul li {
-  /* padding: 0 10px; */
-  padding-left: 50px;
+header nav ul li a {
+  margin-right: 40px;
+  color: white;
 }
 
+header nav ul li:last-child a {
+  margin-right: 0;
+}
 nav ul li a {
   font-size: 20px;
 }
@@ -48,25 +66,8 @@ main p {
   color: rgb(117, 111, 94);
 }
 
-.section-wrapper h2 {
-  text-align: center;
-  font-weight: lighter;
-  font-size: 37px;
-}
-
-/* sets h2 styles */
-
-/* wrappper container fo */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .intro {
-  width: 80%;
   padding: 30px;
-  margin: 0 auto;
 }
 
 .intro ul li {
@@ -74,8 +75,8 @@ main p {
 }
 
 .img-container {
-  flex: 1;
-  margin-right: 20px;
+  width: 100%;
+  margin: 0;
 }
 
 .img-container img {
@@ -83,7 +84,6 @@ main p {
 }
 
 .intro-story {
-  flex: 1;
   font-size: 20px;
 }
 
@@ -98,17 +98,20 @@ main p {
   border-bottom: 1px solid cornflowerblue;
   padding-bottom: 2px;
 }
+/* about me */
 .about-me {
   background: whitesmoke;
   padding: 30px;
+  align-items: center;
 }
 .about-story {
-  flex: 2;
   font-weight: lighter;
+  padding: 0;
 }
 
 .about-me .about-story h2 {
   text-align: left;
+  margin: 0;
 }
 .about-me .about-story p {
   text-align: justify;
@@ -119,26 +122,18 @@ main p {
   color: salmon;
 }
 
-.about-me .img-container {
-  flex: 1;
-  flex-basis: 130px;
-  align-self: center;
-}
-
 .about-me .img-container img {
   width: 100%;
 }
 
 .projects {
-  margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .projects .project {
-  margin-bottom: 22px;
-  flex-basis: 350px;
-  padding: 20px;
   background: whitesmoke;
+  margin: 20px 0;
+  padding: 0 10px;
 }
 
 .projects .project img {
@@ -146,16 +141,25 @@ main p {
 }
 
 .projects-links {
+  padding: 10px 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
 .projects-links a {
+  font-size: 16px;
   display: inline-block;
-  padding: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
+  background: rgb(103, 103, 224);
+  color: white !important;
+  padding: 15px 20px;
+}
+.projects-links a:hover {
+  background: rgb(81, 81, 192);
 }
 
 .contact {
+  display: flex;
   flex-direction: column;
   align-content: center;
   text-align: center;
@@ -170,6 +174,7 @@ main p {
 .social-icons {
   display: flex;
   justify-content: space-evenly;
+  margin: 20px;
 }
 
 .social-icons i {
@@ -178,6 +183,9 @@ main p {
 
 form {
   text-align: left;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
 }
 
 form input,
@@ -185,13 +193,15 @@ form textarea {
   display: block;
   width: 100%;
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 form textarea {
   height: 140px;
 }
+
 .btn {
-  background: cornflowerblue;
+  background: rgb(103, 103, 224);
   border: 0;
   border-radius: 5px;
   outline: none;
@@ -201,73 +211,114 @@ form textarea {
 }
 
 .btn:hover {
-  background: rgb(17, 85, 211);
+  /* background: rgb(17, 85, 211); */
+  background: rgb(81, 81, 192);
 }
 
-/* links styling */
 a {
-  color: cornflowerblue;
+  color: rgb(60, 119, 228);
   text-decoration: none;
   font-size: 20px;
 }
 
 a:visited {
-  color: cornflowerblue;
+  color: rgb(60, 119, 228);
 }
 
 a:hover {
-  color: rgb(17, 85, 211);
+  color: rgb(39, 86, 173);
 }
 
 a:active {
   color: rgb(7, 29, 70);
 }
 
-/* Media queries */
-@media all and (max-width: 1088px) {
-  .projects {
+@media all and (min-width: 770px) {
+  .flex-container {
+    flex-direction: row;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 35px;
+  }
+
+  header nav {
+    align-self: center;
+
+    align-items: center;
+  }
+
+  header nav ul li {
+    align-items: center;
+  }
+
+  /* main intro section */
+  .intro {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .intro .intro-story {
+    flex: 1;
+  }
+
+  .intro .img-container {
+    flex: 1;
+  }
+  .intro .img-container img {
+    width: 90%;
+  }
+
+  /* about me section */
+
+  .about-me {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .about-me .about-story {
+    flex: 2;
+  }
+
+  .about-me .img-container {
+    flex: 1;
+    flex-basis: 130px;
+  }
+  .about-me .img-container img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* projects */
+  .portfolio {
     justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .portfolio .project {
+    flex-basis: 350px;
+    margin: 20px 5px;
+  }
+
+  .portfolio .project {
+    padding: 0;
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .portfolio .project .projects-links {
+    padding: 20px 0;
   }
 }
 
-@media all and (max-width: 800px) {
-  main .section-wrapper:first-of-type {
-    margin-bottom: 0px;
+@media all and (min-width: 1120px) {
+  .portfolio {
+    flex-direction: row;
+    justify-content: space-between;
   }
-
-  header {
-    flex-direction: column;
-  }
-
-  header h1 {
-    margin-right: 0;
-  }
-
-  header nav ul li:first-of-type {
-    padding-left: 0;
-  }
-
-  .intro {
-    padding: 20px 10px 10px 10px;
-  }
-
-  .img-container {
-    margin: 0;
-  }
-
-  .intro-story {
-    padding: 30px;
-  }
-  .flex-container {
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-
-  .about-me .about-story p {
-    padding-right: 0;
-  }
-  .about-me > .about-story {
-    flex: 1;
+  .portfolio .project {
+    flex-basis: 350px;
   }
 }
