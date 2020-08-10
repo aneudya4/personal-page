@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sriracha&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sriracha&display=swap");
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* styles for footer and header  */
@@ -14,6 +15,7 @@ footer {
   color: white;
   padding: 30px 0;
 }
+
 h2 {
   font-weight: lighter;
   font-size: 37px;
@@ -25,14 +27,16 @@ h2 {
   margin-bottom: 30px;
 }
 
+/* header styles */
 header {
   padding: 30px 0;
 }
 
 header h1 {
   font-size: 40px;
-  font-family: 'Sriracha', cursive;
+  font-family: "Sriracha", cursive;
 }
+
 header nav {
   display: flex;
   justify-content: space-around;
@@ -57,19 +61,24 @@ header nav ul li a:visited {
 header nav ul li:last-child a {
   margin-right: 0;
 }
+
 nav ul li a {
   font-size: 20px;
 }
+
 header nav ul li a:hover {
   border-bottom: 1px solid whitesmoke;
   padding-bottom: 4px;
 }
 
-/* set color for all p tags in the page */
+/* end of header styles */
+/* set color and font-weight for all p tags in the page */
 main p {
   color: rgb(117, 111, 94);
+  font-weight: lighter;
 }
 
+/* intro section styles */
 .intro {
   padding: 30px;
 }
@@ -98,18 +107,21 @@ main p {
 .intro-story p {
   font-weight: lighter;
 }
+
 .intro-story p a {
   border-bottom: 1px solid cornflowerblue;
   padding-bottom: 2px;
 }
-/* about me */
+
+/* end of intro section styles */
+/* about me  section styles*/
 .about-me {
   background: whitesmoke;
   padding: 30px;
   align-items: center;
 }
+
 .about-story {
-  font-weight: lighter;
   padding: 0;
 }
 
@@ -117,11 +129,13 @@ main p {
   text-align: left;
   margin: 0;
 }
+
 .about-me .about-story p {
   text-align: justify;
   font-size: 20px;
   padding-right: 20px;
 }
+
 .about-story p strong {
   color: salmon;
 }
@@ -130,6 +144,8 @@ main p {
   width: 100%;
 }
 
+/* end of about-me section styles*/
+/* projects section  styles*/
 .projects {
   padding: 0 20px;
 }
@@ -150,6 +166,7 @@ main p {
   justify-content: space-around;
   margin-bottom: 20px;
 }
+
 .projects-links a {
   font-size: 16px;
   display: inline-block;
@@ -158,10 +175,13 @@ main p {
   color: white !important;
   padding: 15px 20px;
 }
+
 .projects-links a:hover {
   background: rgb(81, 81, 192);
 }
 
+/* end of projects section  styles*/
+/* contact section styles */
 .contact {
   display: flex;
   flex-direction: column;
@@ -215,10 +235,11 @@ form textarea {
 }
 
 .btn:hover {
-  /* background: rgb(17, 85, 211); */
   background: rgb(81, 81, 192);
 }
 
+/* end of contact section styles */
+/* GENERIC STYLES FOR LINKS */
 a {
   color: rgb(60, 119, 228);
   text-decoration: none;
@@ -237,10 +258,13 @@ a:active {
   color: rgb(7, 29, 70);
 }
 
+/* END OF GENERIC STYLES FOR LINKS */
+/* MEDIA QUERIES FOR DESKTOP  */
 @media all and (min-width: 770px) {
   .flex-container {
     flex-direction: row;
   }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -250,7 +274,6 @@ a:active {
 
   header nav {
     align-self: center;
-
     align-items: center;
   }
 
@@ -271,12 +294,12 @@ a:active {
   .intro .img-container {
     flex: 1;
   }
+
   .intro .img-container img {
     width: 90%;
   }
 
   /* about me section */
-
   .about-me {
     align-items: center;
     justify-content: space-evenly;
@@ -290,6 +313,7 @@ a:active {
     flex: 1;
     flex-basis: 130px;
   }
+
   .about-me .img-container img {
     width: 100%;
     border-radius: 10px;
@@ -317,11 +341,13 @@ a:active {
   }
 }
 
+/* sets space between to have the project card align in rows */
 @media all and (min-width: 1120px) {
   .portfolio {
     flex-direction: row;
     justify-content: space-between;
   }
+
   .portfolio .project {
     flex-basis: 350px;
   }
