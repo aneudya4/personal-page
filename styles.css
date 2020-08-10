@@ -50,6 +50,10 @@ header nav ul li a {
   color: white;
 }
 
+header nav ul li a:visited {
+  color: white;
+}
+
 header nav ul li:last-child a {
   margin-right: 0;
 }
