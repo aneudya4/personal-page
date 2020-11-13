@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sriracha&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sriracha&display=swap');
 
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* styles for footer and header  */
@@ -34,7 +34,7 @@ header {
 
 header h1 {
   font-size: 40px;
-  font-family: "Sriracha", cursive;
+  font-family: 'Sriracha', cursive;
 }
 
 header nav {
@@ -89,6 +89,7 @@ main p {
 
 .img-container {
   width: 100%;
+  max-width: 500px;
   margin: 0;
 }
 
@@ -154,6 +155,8 @@ main p {
   background: whitesmoke;
   margin: 20px 0;
   padding: 0 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects .project img {
@@ -164,10 +167,13 @@ main p {
   padding: 10px 0px;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  margin-top: auto;
 }
 
 .projects-links a {
+  margin-top: auto;
+
   font-size: 16px;
   display: inline-block;
   border-radius: 5px;
