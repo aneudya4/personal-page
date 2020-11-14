@@ -154,9 +154,13 @@ main p {
 .projects .project {
   background: whitesmoke;
   margin: 20px 0;
-  padding: 0 10px;
   display: flex;
   flex-direction: column;
+}
+
+.project h3,
+.project p {
+  padding: 0 20px;
 }
 
 .projects .project img {
@@ -167,7 +171,6 @@ main p {
   padding: 10px 0px;
   display: flex;
   justify-content: space-around;
-  /* margin-bottom: 20px; */
   margin-top: auto;
 }
 
@@ -334,16 +337,20 @@ a:active {
   .portfolio .project {
     flex-basis: 350px;
     margin: 20px 5px;
-  }
-
-  .portfolio .project {
     padding: 0;
     font-size: 18px;
-    padding: 0 20px;
   }
-
+  .project img {
+    height: 250px;
+  }
   .portfolio .project .projects-links {
     padding: 20px 0;
+  }
+
+  .portfolio::after {
+    content: '';
+    display: block;
+    flex-basis: 350px;
   }
 }
 
