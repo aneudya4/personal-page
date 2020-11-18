@@ -90,11 +90,11 @@ main p {
 .img-container {
   width: 100%;
   max-width: 500px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .img-container img {
-  max-width: 450px;
+  max-width: 100%;
 }
 
 .intro-story {
