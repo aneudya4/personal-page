@@ -20,11 +20,13 @@ h2 {
   font-weight: lighter;
   font-size: 37px;
 }
+article.flex-container {
+  align-items: center;
+}
 
 .flex-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -157,9 +159,11 @@ main p {
 
 .projects .project {
   background: whitesmoke;
-  margin: 20px 0;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 450px;
 }
 
 .project h3,
@@ -169,7 +173,6 @@ main p {
 
 .projects .project img {
   width: 100%;
-  object-fit: cover;
 }
 
 .projects-links {
