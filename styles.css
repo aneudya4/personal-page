@@ -88,6 +88,10 @@ main p {
 
 .intro ul li {
   color: rgb(27, 60, 121);
+  text-align: center;
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .img-container {
