@@ -12,11 +12,13 @@ body {
 header {
   background: #262626;
   color: white;
-  padding: 0 100px;
 }
 
 nav {
+  padding: 0 20px;
   display: flex;
+  width: 100%;
+  border-bottom: 1px solid rgba(144, 145, 146, 0.63);
   align-items: center;
 }
 
@@ -92,7 +94,8 @@ nav ul li a:hover::after {
   font-weight: bold;
   display: inline-block;
 }
-.see-projects a::after {
+.see-projects a::after,
+.see-projects button::after {
   content: '';
   display: block;
   width: 0;
@@ -101,7 +104,8 @@ nav ul li a:hover::after {
   transition: width 0.3s;
 }
 
-.see-projects a:hover::after {
+.see-projects a:hover::after,
+.see-projects button:hover::after {
   width: 100%;
 }
 
@@ -118,76 +122,155 @@ nav ul li a:hover::after {
   color: white;
 }
 
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1400px;
-  padding: 0 20px;
+.project-card h3 {
+  color: white;
+}
+
+.project {
+  max-width: 1200px;
+  height: 300px;
   margin: 0 auto;
-  /* background: red; */
-}
-.projects-container:after {
-  content: '';
-  display: block;
-  width: 400px;
-}
-.project-card {
-  width: 400px;
-  border: 1px solid whitesmoke;
   border-radius: 5px;
   display: flex;
   color: White;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  padding: 20px;
   margin-bottom: 10px;
 }
-.project-card p {
+.project p {
   padding: 15px;
+  font-size: 20px;
   text-align: justify;
 }
-.project-card .img-container {
+.project .project-details {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.project .img-container {
   width: 100%;
-  height: 50%;
+  flex-basis: 50%;
   background: white;
 }
 
-.project-card .img-container img {
+.project .img-container img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.project-card .project-links {
+.project .project-links {
   margin-top: auto;
   margin-bottom: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
-.project-card .project-links span {
+.project .project-links span {
   background: white;
   padding: 10px 15px;
   border-radius: 4px;
+  margin: 0 10px;
 }
 
-.project-card .project-links span a {
+.project .project-links span a {
   color: black;
 }
 
+.contact {
+  background: #262626;
+  text-align: center;
+  padding: 20px 0;
+}
+.contact h2 {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.contact h2::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #e38443;
+  margin: 7px auto 0 auto;
+}
+.contact-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  min-height: 400px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 300;
+}
+.contact-info > * {
+  margin: 30px 0;
+}
+.contact-info i {
+  display: inline-block;
+  margin-right: 20px;
+  color: #e38443;
+}
+
+.contact-form {
+  background: #1f1f1f;
+  padding: 20px;
+}
+.contact-form h3 {
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+form {
+  background: #1f1f1f;
+  display: flex;
+  text-align: left;
+  color: white;
+  flex-direction: column;
+  width: 400px;
+  padding: 20px 0;
+}
+form input,
+textarea {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  margin: 10px;
+  border-bottom: 1px solid rgba(144, 145, 146, 0.63);
+  color: white;
+}
+textarea {
+  background: #262626;
+}
+.contact-form .see-projects {
+  margin-top: 25px;
+  margin-left: 60%;
+}
+
+.contact-form .see-projects::before {
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
+  transform: rotate(40deg);
+  margin-left: 5px;
+}
+.contact-form button {
+  border: 0;
+  background: none;
+  color: white;
+  margin: 0 7px;
+  cursor: pointer;
+}
 a,
 a:visited,
 a:active {
   color: white;
   text-decoration: none;
-}
-
-@keyframes widthExpand {
-  from {
-    width: 0%;
-    position: absolute;
-    background: red;
-  }
-
-  to {
-    width: 100%;
-    position: absolute;
-  }
 }
