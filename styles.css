@@ -246,10 +246,11 @@ h2.section-heading::after {
   padding: 5px 20px;
   margin-top: 50px;
 }
+
 .project p {
-  padding: 15px;
+  padding: 15px 2px;
   font-size: 15px;
-  text-align: left;
+  text-align: center;
   font-weight: lighter;
 }
 .project .project-details {
@@ -419,6 +420,9 @@ a:active {
 }
 
 @media all and (min-width: 500px) {
+  .project p {
+    text-align: justify;
+  }
   .contact-form {
     width: 80%;
   }
