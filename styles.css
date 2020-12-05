@@ -256,12 +256,14 @@ h2.section-heading::after {
 }
 .project .img-container {
   width: 100%;
+  max-width: 450px;
   height: 400px;
   border-radius: 50px;
 }
 
 .project .img-container img {
   width: 100%;
+  object-fit: contain;
   border-radius: 5px;
 
   height: 100%;
@@ -460,7 +462,6 @@ a:active {
 
   .project {
     flex-direction: row-reverse;
-    justify-content: space-between;
     height: 300px;
     position: relative;
   }
