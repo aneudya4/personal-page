@@ -6,12 +6,28 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --bg-primary-color: #262626;
+  --bg-secondary-color: #1f1f1f;
+  --bg-third-color: #1563ba;
+  --bg-default-color: #ffffff;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #1563ba;
+}
+
 body {
-  background: #262626;
+  background: var(--bg-primary-color);
+  scroll-behavior: smooth;
+}
+
+body section:nth-child(even) {
+  background: var(--bg-secondary-color);
+}
+body section:nth-child(odd) {
+  background: var(--bg-primary-color);
 }
 header {
-  background: #262626;
-  color: white;
+  color: var(--color-text-primary);
 }
 .navigation {
   position: fixed;
@@ -24,17 +40,22 @@ header {
   border-bottom: 1px solid rgba(117, 115, 115, 0.301);
   box-shadow: 3px 18px 15px -2px rgba(12, 12, 12, 0.64);
 }
+.navigation .logo {
+  font-size: 25px;
+}
+
 nav {
-  padding: 0 20px;
+  padding: 5px 20px;
   display: flex;
   align-items: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   max-width: 1400px;
   margin: 0 auto;
 }
 
 nav ul {
-  margin-left: auto;
+  /* margin-left: auto; */
   font-weight: lighter;
   display: flex;
   align-items: center;
@@ -50,7 +71,7 @@ nav ul li a:after {
   display: block;
   width: 0;
   height: 2px;
-  background: #e38443;
+  background: var(--bg-third-color);
   transition: width 0.3s;
 }
 
@@ -85,7 +106,7 @@ nav ul li a:hover::after {
 .personal-info p {
   margin: 30px 0;
   font-weight: lighter;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .svg-container {
@@ -95,7 +116,7 @@ nav ul li a:hover::after {
   height: 500px;
   margin-top: 40px;
   width: 60%;
-  background: url('./images/coding_\ copy.svg');
+  background: url('./images/coding.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -118,7 +139,7 @@ nav ul li a:hover::after {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: #e383439c;
+  background-color: #4296f57e;
   position: absolute;
   left: -25px;
 }
@@ -136,7 +157,7 @@ nav ul li a:hover::after {
   display: block;
   width: 0;
   height: 2px;
-  background: #e38443;
+  background: var(--bg-third-color);
   transition: width 0.3s;
 }
 
@@ -146,24 +167,63 @@ nav ul li a:hover::after {
 }
 
 .see-projects span {
-  color: #e38443;
+  color: var(--color-text-secondary);
+}
+.about-me {
+  text-align: center;
+  color: var(--color-text-primary);
+  padding: 5px;
 }
 
-.projects {
-  background: #1f1f1f;
-  text-align: center;
-  padding: 20px 0;
-}
-.projects h2 {
-  color: white;
+.about-me h2 {
   font-size: 40px;
 }
 
+.about-info {
+  text-align: left;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 5px;
+}
+.about-info p span {
+  border-bottom: 1px solid var(--bg-third-color);
+  color: var(--color-text-primary);
+}
+.about-info p {
+  margin: 10px;
+  word-spacing: 5px;
+}
+
+.projects {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.projects h2 {
+  text-align: center;
+  padding-left: 20px;
+  color: var(--color-text-primary);
+  font-size: 40px;
+}
+h2.section-heading::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--bg-third-color);
+  margin: 7px auto 0 auto;
+}
+
 .project-card {
-  margin: 100px 0;
+  padding: 40px;
+}
+
+.project-card:not(:last-child) {
+  border-bottom: 2px solid #262626;
 }
 .project-card h3 {
-  color: white;
+  font-size: 25px;
+  color: var(--color-text-primary);
 }
 
 .project {
@@ -172,7 +232,7 @@ nav ul li a:hover::after {
   margin: 0 auto;
   border-radius: 5px;
   display: flex;
-  color: White;
+  color: var(--color-text-primary);
   flex-direction: column;
   justify-content: space-around;
   padding: 5px 20px;
@@ -186,6 +246,11 @@ nav ul li a:hover::after {
 .project .project-details {
   display: flex;
   flex-direction: column;
+}
+
+.project .project-details p:last-of-type {
+  font-size: 14px;
+  font-weight: lighter;
 }
 .project .img-container {
   width: 100%;
@@ -204,46 +269,37 @@ nav ul li a:hover::after {
   justify-content: center;
 }
 
-.project .project-links span {
-  background: white;
-  padding: 10px 15px;
-  border-radius: 4px;
-  margin: 0 10px;
-  cursor: pointer;
-  color: black;
-}
-
-.project .project-links span:hover {
-  background: #e38443;
+.project .project-links a:hover {
+  background: var(--color-text-secondary);
+  color: var(--color-text-primary);
+  transform: translateY(-7px);
   transition: all ease-in 0.3s;
-  color: white;
 }
 
-.project .project-links span a {
-  color: inherit;
+.project .project-links a {
+  background: var(--bg-default-color);
+  border-radius: 4px;
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 0 10px;
+  background: var(--color-text-primary);
+  color: black;
+  cursor: pointer;
 }
 
 .contact {
-  background: #262626;
   text-align: center;
   padding: 20px 0;
   max-width: 1400px;
   margin: 0 auto;
+  border-bottom: 2px solid var(--bg-secondary-color);
 }
 .contact h2 {
-  color: white;
-  font-size: 30px;
+  color: var(--color-text-primary);
+  font-size: 40px;
   margin-bottom: 50px;
 }
 
-.contact h2::after {
-  content: '';
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: #e38443;
-  margin: 7px auto 0 auto;
-}
 .contact-me {
   display: flex;
   align-items: center;
@@ -256,7 +312,7 @@ nav ul li a:hover::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: white;
+  color: var(--color-text-primary);
   min-height: 400px;
   text-align: left;
   font-size: 15px;
@@ -265,21 +321,32 @@ nav ul li a:hover::after {
 .contact-info > * {
   margin: 30px 0;
 }
-.contact-info i {
+.contact-links a {
   display: inline-block;
-  margin-right: 20px;
-  color: #e38443;
+  margin: 0 10px;
+  padding: 5px;
+  border-bottom: 1px solid var(--color-text-secondary);
 }
-
+.contact-links span i {
+  font-size: 18px;
+}
+.contact-links span a:hover {
+  transform: translateY(-7px);
+  transition: all ease-in 0.3s;
+}
+.contact-links span i.fa-twitter,
+i.fa-linkedin-in {
+  color: var(--color-text-secondary);
+}
 .contact-form h3 {
   text-align: center;
   margin: 0 0 10px 0;
 }
 form {
-  background: #1f1f1f;
+  background: var(--bg-secondary-color);
   display: flex;
   text-align: justify;
-  color: white;
+  color: var(--color-text-primary);
   flex-direction: column;
   width: 100%;
   max-width: 400px;
@@ -297,10 +364,10 @@ textarea {
   border: 0;
   margin: 10px;
   border-bottom: 1px solid rgba(144, 145, 146, 0.63);
-  color: white;
+  color: var(--color-text-primary);
 }
 textarea {
-  background: #262626;
+  background: var(--bg-primary-color);
 }
 .contact-form .see-projects {
   bottom: 0;
@@ -319,14 +386,22 @@ textarea {
 .contact-form button {
   border: 0;
   background: none;
-  color: white;
+  color: var(--color-text-primary);
   margin: 0 7px;
   cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  font-size: 5px 20px;
+  font-weight: lighter;
+  color: var(--color-text-primary);
+  padding: 30px;
 }
 a,
 a:visited,
 a:active {
-  color: white;
+  color: var(--color-text-primary);
   text-decoration: none;
 }
 
@@ -338,6 +413,16 @@ a:active {
     margin: 0 auto;
   }
 }
+
+@media all and (min-width: 700px) {
+  nav {
+    flex-direction: row;
+  }
+  nav ul {
+    margin-left: auto;
+  }
+}
+
 @media all and (min-width: 905px) {
   .personal-info {
     text-align: justify;
@@ -350,6 +435,14 @@ a:active {
   .see-projects {
     width: auto;
     margin-left: 20px;
+  }
+  .about-me {
+    padding: 20px;
+  }
+
+  .about-info {
+    width: 70%;
+    padding: 20px;
   }
   .svg-container {
     position: static;
