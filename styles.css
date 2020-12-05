@@ -225,11 +225,11 @@ h2.section-heading::after {
 }
 
 .project-card {
-  padding: 20px;
+  padding: 45px 20px;
 }
 
 .project-card:not(:last-child) {
-  border-bottom: 2px solid #262626;
+  border-bottom: 1px solid var(--bg-secondary-color);
 }
 .project-card h3 {
   font-size: 25px;
@@ -238,20 +238,18 @@ h2.section-heading::after {
 
 .project {
   max-width: 1200px;
-  height: 700px;
   margin: 0 auto;
   border-radius: 5px;
   display: flex;
   color: var(--color-text-primary);
   flex-direction: column;
-  justify-content: space-around;
   padding: 5px 20px;
   margin-top: 50px;
 }
 .project p {
   padding: 15px;
   font-size: 20px;
-  text-align: justify;
+  text-align: left;
 }
 .project .project-details {
   display: flex;
@@ -277,6 +275,7 @@ h2.section-heading::after {
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .project .project-links a:hover {
@@ -475,6 +474,14 @@ a:active {
     position: relative;
   }
 
+  .project p {
+    text-align: justify;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
   .project .project-details,
   .project .img-container {
     flex-basis: 50%;
@@ -485,7 +492,7 @@ a:active {
   }
   .project-links {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 15%;
   }
   .contact h2 {
