@@ -141,17 +141,25 @@ nav ul li a:hover::after {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: #4296f57e;
+  background: var(--bg-third-color);
   position: absolute;
   left: -25px;
 }
 
 .see-projects a {
   margin-right: 10px;
-  z-index: 1;
   font-size: 15px;
   font-weight: bold;
   display: inline-block;
+}
+
+.see-projects a,
+.see-projects button {
+  z-index: 1;
+}
+
+.see-projects span {
+  animation: right-arrow 0.6s infinite alternate ease-in-out;
 }
 .see-projects a::after,
 .see-projects button::after {
@@ -265,7 +273,6 @@ h2.section-heading::after {
   width: 100%;
   object-fit: contain;
   border-radius: 5px;
-
   height: 100%;
 }
 .project .project-links {
@@ -327,6 +334,7 @@ h2.section-heading::after {
 .contact-info > * {
   margin: 30px 0;
 }
+
 .contact-links a {
   display: inline-block;
   margin: 0 10px;
@@ -342,7 +350,7 @@ h2.section-heading::after {
 }
 .contact-links span i.fa-twitter,
 i.fa-linkedin-in {
-  color: var(--color-text-secondary);
+  color: #1da1f2;
 }
 .contact-form h3 {
   text-align: center;
@@ -350,13 +358,14 @@ i.fa-linkedin-in {
 }
 form {
   background: var(--bg-secondary-color);
+  border: 1px solid var(--bg-primary-color);
   display: flex;
   text-align: justify;
   color: var(--color-text-primary);
   flex-direction: column;
   width: 100%;
   max-width: 400px;
-  padding: 20px 15px;
+  padding: 25px 15px;
   margin-left: auto;
 }
 
@@ -490,5 +499,16 @@ a:active {
   form {
     margin: 0;
     margin-left: auto;
+  }
+}
+
+/* aanimations */
+
+@keyframes right-arrow {
+  0% {
+    -webkit-transform: translateX(0.9);
+  }
+  100% {
+    -webkit-transform: translateX(-0.3em);
   }
 }
