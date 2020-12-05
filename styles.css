@@ -248,8 +248,9 @@ h2.section-heading::after {
 }
 .project p {
   padding: 15px;
-  font-size: 20px;
+  font-size: 15px;
   text-align: left;
+  font-weight: lighter;
 }
 .project .project-details {
   display: flex;
