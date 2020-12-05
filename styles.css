@@ -432,6 +432,7 @@ a:active {
 @media all and (min-width: 700px) {
   nav {
     flex-direction: row;
+    padding: 15px 20px;
   }
   nav ul {
     margin-left: auto;
