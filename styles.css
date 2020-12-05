@@ -303,7 +303,6 @@ h2.section-heading::after {
 .contact {
   text-align: center;
   padding: 20px 0;
-  max-width: 1400px;
   margin: 0 auto;
   border-bottom: 2px solid var(--bg-secondary-color);
 }
@@ -314,6 +313,7 @@ h2.section-heading::after {
 }
 
 .contact-me {
+  max-width: 1400px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
