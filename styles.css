@@ -133,7 +133,7 @@ nav ul li a:hover::after {
   display: flex;
   align-items: center;
   margin: 0 auto;
-  width: 190px;
+  width: 200px;
 }
 
 .see-projects:before {
@@ -147,10 +147,9 @@ nav ul li a:hover::after {
 }
 
 .see-projects a {
-  margin-right: 15px;
+  margin-right: 8px;
   margin-left: 25px;
-
-  font-size: 13px;
+  font-size: 11px;
   font-weight: bold;
   display: inline-block;
 }
