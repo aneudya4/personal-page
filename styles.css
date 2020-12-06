@@ -11,8 +11,18 @@
   --bg-secondary-color: #1f1f1f;
   --bg-third-color: #1563ba;
   --bg-default-color: #ffffff;
+  --border-color: #1f1f1f4b;
   --color-text-primary: #ffffff;
   --color-text-secondary: #1563ba;
+  --nav-background-color: #202020f6;
+}
+
+[data-theme='light'] {
+  --bg-primary-color: #ffffff;
+  --bg-secondary-color: #ffffff;
+  --bg-default-color: #262626;
+  --color-text-primary: #1f1f1f;
+  --nav-background-color: #ffffff;
 }
 
 body {
@@ -31,11 +41,11 @@ header {
 }
 .navigation {
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   left: 50%;
   transform: translate(-50%);
-  background: #202020f6;
+  background: var(--nav-background-color);
   width: 100%;
   border-bottom: 1px solid rgba(117, 115, 115, 0.301);
   box-shadow: 3px 18px 15px -2px rgba(12, 12, 12, 0.64);
@@ -80,6 +90,91 @@ nav ul li a:after {
 nav ul li a:hover::after {
   width: 100%;
 }
+nav label span:first-of-type {
+  opacity: 0;
+}
+
+/* theme switcher */
+
+.icon {
+  position: absolute;
+  top: 5px;
+  font-size: 15px;
+}
+.icon-sun {
+  top: 1px;
+  right: 42px;
+  font-size: 19px;
+}
+.icon-moon {
+  left: 45px;
+}
+
+/*  */
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  top: 30px;
+  right: 84%;
+  display: none;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  left: -1px;
+  bottom: 4px;
+  background-color: var(--bg-default-color);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* end theme switcher */
 
 .banner {
   height: 100vh;
@@ -184,6 +279,8 @@ nav ul li a:hover::after {
   text-align: center;
   color: var(--color-text-primary);
   padding: 5px;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .about-me h2 {
@@ -230,7 +327,7 @@ h2.section-heading::after {
 }
 
 .project-card:not(:last-child) {
-  border-bottom: 1px solid var(--bg-secondary-color);
+  border-bottom: 1px solid var(--border-color);
 }
 .project-card h3 {
   font-size: 25px;
@@ -289,13 +386,12 @@ h2.section-heading::after {
 }
 
 .project .project-links a {
-  background: var(--bg-default-color);
   border-radius: 4px;
   display: inline-block;
   padding: 10px 15px;
   margin: 0 10px;
   background: var(--color-text-primary);
-  color: black;
+  color: var(--bg-primary-color);
   cursor: pointer;
   font-size: 12px;
 }
@@ -304,7 +400,7 @@ h2.section-heading::after {
   text-align: center;
   padding: 20px 0;
   margin: 0 auto;
-  border-bottom: 2px solid var(--bg-secondary-color);
+  border-top: 1px solid var(--border-color);
 }
 .contact h2 {
   color: var(--color-text-primary);
@@ -412,6 +508,7 @@ footer {
   font-weight: lighter;
   color: var(--color-text-primary);
   padding: 25px;
+  border-top: 1px solid var(--border-color);
 }
 a,
 a:visited,
@@ -431,8 +528,16 @@ a:active {
     margin: 0 auto;
   }
 }
+@media all and (min-width: 370px) {
+  .switch {
+    display: block;
+  }
+}
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 710px) {
+  .switch {
+    right: 60%;
+  }
   .about-info p {
     text-align: justify;
   }
@@ -447,7 +552,7 @@ a:active {
 
 @media all and (min-width: 905px) {
   .personal-info {
-    text-align: justify;
+    text-align: left;
   }
 
   .personal-info h2 {
