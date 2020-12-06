@@ -15,6 +15,7 @@
   --color-text-primary: #ffffff;
   --color-text-secondary: #1563ba;
   --nav-background-color: #202020f6;
+  --border-color-form: #ffffff4f;
 }
 
 [data-theme='light'] {
@@ -23,6 +24,7 @@
   --bg-default-color: #262626;
   --color-text-primary: #1f1f1f;
   --nav-background-color: #ffffff;
+  --border-color-form: #2020204b;
 }
 
 body {
@@ -48,7 +50,7 @@ header {
   background: var(--nav-background-color);
   width: 100%;
   border-bottom: 1px solid rgba(117, 115, 115, 0.301);
-  box-shadow: 3px 18px 15px -2px rgba(12, 12, 12, 0.64);
+  box-shadow: 3px 10px 10px -11px var(--bg-default-color);
 }
 .navigation .logo {
   font-size: 25px;
@@ -74,7 +76,7 @@ nav ul {
 nav ul li {
   font-size: 20px;
 }
-nav ul li:not(:first-of-type) {
+nav ul li {
   margin-left: 30px;
 }
 
@@ -112,12 +114,12 @@ nav label span:first-of-type {
 
 /*  */
 .switch {
-  position: absolute;
+  position: relative;
   display: inline-block;
   width: 40px;
   height: 24px;
-  top: 30px;
-  right: 84%;
+  top: -3px;
+  right: -10px;
   display: none;
 }
 
@@ -324,11 +326,9 @@ h2.section-heading::after {
 
 .project-card {
   padding: 45px 5px;
+  margin-bottom: 50px;
 }
 
-.project-card:not(:last-child) {
-  border-bottom: 1px solid var(--border-color);
-}
 .project-card h3 {
   font-size: 25px;
   color: var(--color-text-primary);
@@ -435,7 +435,6 @@ h2.section-heading::after {
   display: inline-block;
   margin: 0 10px;
   padding: 5px;
-  border-bottom: 1px solid var(--color-text-secondary);
 }
 .contact-links span i {
   font-size: 18px;
@@ -454,7 +453,7 @@ i.fa-linkedin-in {
 }
 form {
   background: var(--bg-secondary-color);
-  border: 1px solid var(--bg-primary-color);
+  border: 1px solid var(--border-color-form);
   display: flex;
   text-align: justify;
   color: var(--color-text-primary);
@@ -463,6 +462,7 @@ form {
   max-width: 400px;
   padding: 25px 15px;
   margin-left: auto;
+  box-shadow: 3px 10px 38px -11px var(--border-color-form);
 }
 
 form label {
@@ -528,16 +528,16 @@ a:active {
     margin: 0 auto;
   }
 }
-@media all and (min-width: 370px) {
-  .switch {
-    display: block;
-  }
-}
 
 @media all and (min-width: 710px) {
-  .switch {
-    right: 60%;
+  nav ul li:last-of-type {
+    margin-right: 30px;
   }
+  .switch {
+    display: block;
+    /* right: 60%; */
+  }
+
   .about-info p {
     text-align: justify;
   }
