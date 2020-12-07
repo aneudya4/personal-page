@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   transition: background 300ms linear;
+  font-display: optional;
 }
 :root {
   --bg-primary-color: #262626;
@@ -397,7 +398,7 @@ h2.section-heading::after {
   background: var(--color-text-primary);
   color: var(--bg-primary-color);
   cursor: pointer;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .contact {
