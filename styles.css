@@ -347,7 +347,7 @@ h2.section-heading::after {
 
 .project p {
   padding: 15px 2px;
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
   font-weight: lighter;
 }
@@ -608,6 +608,9 @@ a:active {
     position: absolute;
     bottom: 10px;
     left: 15%;
+  }
+  .project-card:nth-child(odd) .project-links {
+    left: 65%;
   }
   .contact h2 {
     padding-right: 120px;
