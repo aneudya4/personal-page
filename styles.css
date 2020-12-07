@@ -2,9 +2,10 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Montserrat', 'Rubik', sans-serif;
   margin: 0;
   padding: 0;
+  transition: background 300ms linear;
 }
 :root {
   --bg-primary-color: #262626;
@@ -363,6 +364,7 @@ h2.section-heading::after {
 .project .img-container {
   width: 100%;
   border-radius: 50px;
+  margin: 20px 0;
 }
 
 .project .img-container img {
