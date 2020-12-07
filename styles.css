@@ -284,6 +284,7 @@ input:checked + .slider:before {
   padding: 5px;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
+  line-height: 25px;
 }
 
 .about-me h2 {
@@ -351,6 +352,7 @@ h2.section-heading::after {
   font-size: 18px;
   text-align: center;
   font-weight: lighter;
+  line-height: 22px;
 }
 .project .project-details {
   display: flex;
@@ -425,9 +427,10 @@ h2.section-heading::after {
   justify-content: center;
   color: var(--color-text-primary);
   min-height: 400px;
-  text-align: left;
+  text-align: center;
   font-size: 15px;
   font-weight: 300;
+  line-height: 22px;
 }
 .contact-info > * {
   margin: 30px 0;
@@ -616,6 +619,9 @@ a:active {
   }
   .contact h2 {
     padding-right: 120px;
+  }
+  .contact-info {
+    text-align: left;
   }
   .contact-me {
     flex-direction: row;
