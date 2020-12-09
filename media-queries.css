@@ -1,4 +1,14 @@
 @media all and (min-width: 710px) {
+  .banner {
+    padding: 0 20px;
+  }
+  .navigation {
+    padding: 25px;
+  }
+  nav a > h1 {
+    display: block;
+    margin: 0;
+  }
   nav ul li:last-of-type {
     margin-right: 30px;
   }
@@ -6,23 +16,26 @@
     display: block;
   }
   .personal-info {
-    /* text-align: left; */
     width: 90%;
-    padding: 0 10px;
   }
   .personal .about-info p {
     text-align: justify;
   }
   nav {
     flex-direction: row;
-    padding: 10px 20px;
+    padding: 0 20px;
   }
   nav ul {
     margin-left: auto;
   }
 
   .svg-container {
-    margin: 0 10px;
+    width: 45%;
+    min-width: 375px;
+    margin-right: auto;
+  }
+  .svg-container {
+    object-fit: cover;
   }
   .project .project-details,
   .project .img-container {
@@ -33,7 +46,9 @@
 @media all and (min-width: 905px) {
   .personal-info {
     text-align: left;
-    /* padding: 30px; */
+  }
+  .personal-info p {
+    width: 87%;
   }
   .personal-info h2 {
     font-size: 70px;
@@ -42,13 +57,10 @@
     width: auto;
     margin-left: 20px;
   }
-  .about-me {
-    padding: 20px;
-  }
+
   .about-info {
     width: 70%;
     max-width: 1200px;
-    padding: 20px;
   }
   .svg-container {
     position: static;
