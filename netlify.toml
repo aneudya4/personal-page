@@ -6,4 +6,4 @@
   [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src  'self' 'self https://apis.google.com 'unsafe-inline'; https://*.googleapis/*/ https://*.fontawesome.com/*/ script-src 'self' 'unsafe-eval'; object-src 'self';"
+    Content-Security-Policy = "default-src  'self' 'self https://imagekit.io/*' 'self https://apis.google.com 'unsafe-inline'; https://*.googleapis/*/ https://*.fontawesome.com/*/ script-src 'self' 'unsafe-eval'; object-src 'self';"
