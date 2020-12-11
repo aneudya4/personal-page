@@ -3,7 +3,4 @@
   to = "/"
   status = 200
 
-  [[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Security-Policy = "default-src  'self' 'self https://apis.google.com  *.fontawesome.com; img-src 'self  https://imagekit.io/ ''unsafe-inline'; https://*.googleapis/*/  https://*.fontawesome.com/*/ script-src 'self' 'unsafe-eval'; object-src 'self';"
+  
