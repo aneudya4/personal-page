@@ -50,7 +50,7 @@ This is my personal website, I built with it HTML5 and CSS3 and JavaScript. The 
 ### Projects Section:
 
 <p align="center">
-<img  src="./readme_assets/projects.png" width="35%">
+<img  src="./readme_assets/projects.png" width="37%">
 <img  src="./readme_assets/projects-light.png" width="40%">
 
 </p>
