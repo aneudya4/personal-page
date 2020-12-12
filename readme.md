@@ -28,7 +28,8 @@
 </p>
  
 <p align="center">
-<img src="./logo.png" width="80%"></p>
+<img src="./logo.png" width="50%">
+<img src="./readme_assets/logo-light.png" width="50%"></p>
 This is my personal website, I built with it HTML5 and CSS3 and JavaScript. The website implements Light-Dark mode and its fully responsive. 
 
 
@@ -42,17 +43,24 @@ This is my personal website, I built with it HTML5 and CSS3 and JavaScript. The 
 <p align="center"><img  src="./readme_assets/dark-light.gif" width="70%"></p>
 
 ### About Section:
-<p align="center"><img  src="./readme_assets/about.png" width="70%"></p>
+
+<p align="center"><img  src="./readme_assets/about.png" width="50%">
+<img  src="./readme_assets/about-light.png" width="50%"></p>
 
 ### Projects Section:
 
+<p align="center">
+<img  src="./readme_assets/projects.png" width="50%">
+<img  src="./readme_assets/projects-light.png" width="50%">
 
-<p align="center"><img  src="./readme_assets/projects.png" width="70%"></p>
+</p>
 
 ### Contact Section:
 
-
-<p align="center"><img  src="./readme_assets/contact.png" width="70%"></p>
+<p align="center">
+<img  src="./readme_assets/contact.png" width="50%">
+<img  src="./readme_assets/contact-light.png" width="50%">
+</p>
 
 
 
