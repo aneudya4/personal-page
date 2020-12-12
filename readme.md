@@ -37,7 +37,7 @@ This is my personal website, I built with it HTML5 and CSS3 and JavaScript. The 
 <p align="center"><img  src="./readme_assets/mobile.gif" width="70%"></p>
 
 
-### Dark-light Modes:
+### Dark-light Mode:
 
 <p align="center"><img  src="./readme_assets/dark-light.gif" width="70%"></p>
 
