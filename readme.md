@@ -51,7 +51,7 @@ This is my personal website, I built with it HTML5 and CSS3 and JavaScript. The 
 
 <p align="center">
 <img  src="./readme_assets/projects.png" width="30%">
-<img  src="./readme_assets/projects-light.png" width="30%">
+<img  src="./readme_assets/projects-light.png" width="40%">
 
 </p>
 
