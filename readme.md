@@ -1,8 +1,7 @@
 <h1 align="center">Personal Website</h1>
 
-<h2 align="center">
+<h2 align="center"><a  href="https://aneudyadames.dev/">https://aneudyadames.dev</a></h2>
 
-</h2>
 
 <p align="center">
   
@@ -30,7 +29,7 @@
 <p align="center">
 <img src="./logo.png" width="40%">
 <img src="./readme_assets/logo-light.png" width="40%"></p>
-This is my personal website, I built it with it HTML5 and CSS3 and JavaScript. The website implements Light-Dark mode and its fully responsive. 
+This is my personal website, I built it with it HTML5, CSS3 and JavaScript. The website implements Light-Dark mode and its fully responsive. 
 
 
 ### Mobile responsive:
