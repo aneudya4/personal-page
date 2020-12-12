@@ -23,13 +23,14 @@
 
 ## Description
 
-<p align="center">
-<img src="./logo.pn" width="80%"></p>
-This is my personal website, I built with it HTML5 and CSS3 and JavaScript. The website implements Light-Dark mode and its fully responsive. 
-
-<p align="center" >Version 1.0 of my website can be found here!  
+<p align="center">Version 1.0 of my website can be found here!  
 <a  href="https://aneudya4.github.io/personal-page/">Live</a>
 </p>
+ 
+<p align="center">
+<img src="./logo.png" width="80%"></p>
+This is my personal website, I built with it HTML5 and CSS3 and JavaScript. The website implements Light-Dark mode and its fully responsive. 
+
 
 
 ### About Section:
