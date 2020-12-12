@@ -29,7 +29,7 @@
  
 <p align="center">
 <img src="./logo.png" width="40%">
-<img src="./readme_assets/landing-light.png" width="40%"></p>
+<img src="./readme_assets/logo-light.png" width="40%"></p>
 This is my personal website, I built with it HTML5 and CSS3 and JavaScript. The website implements Light-Dark mode and its fully responsive. 
 
 
