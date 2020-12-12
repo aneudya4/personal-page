@@ -58,8 +58,8 @@ This is my personal website, I built with it HTML5 and CSS3 and JavaScript. The 
 ### Contact Section:
 
 <p align="center">
-<img  src="./readme_assets/contact.png" width="50%">
-<img  src="./readme_assets/contact-light.png" width="50%">
+<img  src="./readme_assets/contact.png" width="40%">
+<img  src="./readme_assets/contact-light.png" width="40%">
 </p>
 
 
