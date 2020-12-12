@@ -24,7 +24,7 @@
 ## Description
 
 <p align="center">Version 1.0 of my website can be found here!  
-<a  target='_blank' href="https://aneudya4.github.io/personal-page/">Live</a>
+<a  href="https://aneudya4.github.io/personal-page/">Live</a>
 </p>
  
 <p align="center">
@@ -32,6 +32,14 @@
 This is my personal website, I built with it HTML5 and CSS3 and JavaScript. The website implements Light-Dark mode and its fully responsive. 
 
 
+### Mobile responsive:
+
+<p align="center"><img  src="./readme_assets/mobile.gif" width="70%"></p>
+
+
+### Dark-light Modes:
+
+<p align="center"><img  src="./readme_assets/dark-light.gif" width="70%"></p>
 
 ### About Section:
 <p align="center"><img  src="./readme_assets/about.png" width="70%"></p>
@@ -46,18 +54,10 @@ This is my personal website, I built with it HTML5 and CSS3 and JavaScript. The 
 
 <p align="center"><img  src="./readme_assets/contact.png" width="70%"></p>
 
-### Mobile responsive:
 
-<p align="center"><img  src="./readme_assets/mobile.gif" width="70%"></p>
-
-
-### Dark-light Modes:
-
-<p align="center"><img  src="./readme_assets/dark-light.gif" width="70%"></p>
 
 
 
 ## Future scope:
 
 - Adding more projects
-- Mergin all orders placed by the same client
