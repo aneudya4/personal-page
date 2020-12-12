@@ -24,7 +24,7 @@
 ## Description
 
 <p align="center">Version 1.0 of my website can be found here!  
-<a  href="https://aneudya4.github.io/personal-page/">Live</a>
+<a  target='_blank' href="https://aneudya4.github.io/personal-page/">Live</a>
 </p>
  
 <p align="center">
