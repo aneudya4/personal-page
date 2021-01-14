@@ -12,14 +12,15 @@
 :root {
   --bg-primary-color: #262626;
   --bg-secondary-color: #1f1f1f;
-  --bg-third-color: #58a6ff;
+  --bg-third-color: #1563ba;
   --bg-default-color: #ffffff;
   --border-color: #1f1f1f4b;
   --color-text-primary: #ffffff;
-  --color-text-secondary: #1563ba;
+  --color-text-secondary: #58a6ff;
   --nav-background-color: #202020f6;
   --border-color-form: #ffffff4f;
 }
+
 [data-theme='light'] {
   --bg-primary-color: #ffffff;
   --bg-secondary-color: #ffffff;
@@ -27,7 +28,7 @@
   --color-text-primary: #1f1f1f;
   --nav-background-color: #fffffff1;
   --border-color-form: #2020204b;
-  --bg-third-color: #2a5d97;
+  --color-text-secondary: #2a5d97;
 }
 body {
   background: var(--bg-primary-color);
