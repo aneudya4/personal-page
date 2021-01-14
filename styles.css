@@ -27,6 +27,7 @@
   --color-text-primary: #1f1f1f;
   --nav-background-color: #fffffff1;
   --border-color-form: #2020204b;
+  --bg-third-color: #2a5d97;
 }
 body {
   background: var(--bg-primary-color);
