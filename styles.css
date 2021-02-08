@@ -466,6 +466,11 @@ h2.section-heading::after {
 .contact-info > * {
   margin: 30px 0;
 }
+
+.contact-info > a {
+  margin: 0 auto;
+  width: fit-content;
+}
 .contact-links a {
   display: inline-block;
   margin: 0 10px;

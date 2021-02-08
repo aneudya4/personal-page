@@ -121,8 +121,13 @@
   .contact h2 {
     padding-right: 120px;
   }
+
   .contact-info {
     text-align: left;
+  }
+  .contact-info > a {
+    text-align: left;
+    margin-right: 70%;
   }
   .contact-me {
     flex-direction: row;
