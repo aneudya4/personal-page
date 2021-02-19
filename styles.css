@@ -66,7 +66,7 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -375,7 +375,7 @@ h2.section-heading::after {
   color: var(--color-text-primary);
 }
 .project {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   border-radius: 5px;
   display: flex;
@@ -446,7 +446,7 @@ h2.section-heading::after {
   margin-bottom: 50px;
 }
 .contact-me {
-  max-width: 1400px;
+  max-width: 1600px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
