@@ -17,7 +17,7 @@ export default function AboutMe() {
                         developer/marketing cloud developer with the Ksquare
                         Group. I work with HTML, CSS, and JavaScript. I also
                         have experience with
-                        <span>ReactJS</span>, <span>NodeJS</span>,
+                        <span> ReactJS</span>, <span>NodeJS</span>,
                         <span> ExpressJS</span>, and <span>PostgreSQL</span>. I
                         have a strong background in customer service which gives
                         me an understanding of customer’s needs,
