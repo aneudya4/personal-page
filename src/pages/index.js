@@ -6,6 +6,8 @@ import SEO from '../components/seo';
 import Banner from '../components/Banner';
 import AboutMe from '../components/AboutMe';
 import Projects from '../components/Projects';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const IndexPage = () => (
     <Layout>
@@ -13,6 +15,8 @@ const IndexPage = () => (
         <Banner />
         <AboutMe />
         <Projects />
+        <Contact />
+        <Footer />
     </Layout>
 );
 

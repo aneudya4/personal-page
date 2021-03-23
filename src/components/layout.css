@@ -39,7 +39,7 @@ img {
 /* HEADER */
 
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     padding: 2rem 5rem;
     z-index: 10;
@@ -160,7 +160,7 @@ header {
 /* ABOUT ME  */
 .about {
     background-color: white;
-    padding: 5rem 2rem;
+    padding: 5.5rem 2rem;
 }
 
 .about__container {
@@ -184,8 +184,6 @@ header {
 .about__info {
     flex: 1;
     padding: 0 2rem;
-
-    /* margin: 0 0 0 8rem; */
 }
 
 .about__info h2 {
@@ -198,7 +196,8 @@ header {
 .about__info p {
     width: 100%;
     line-height: 2rem;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    font-weight: lighter;
     color: #acaaaa;
     margin: 0 auto;
 }
@@ -215,13 +214,12 @@ header {
 /* PROJECTS */
 
 .projects {
-    background: white;
     text-align: center;
 }
 
 .projects h2 {
     font-size: 3.2rem;
-    padding: 7rem 0 5rem 0;
+    padding: 5.5rem 0 0rem 0;
     color: #00a78e;
 }
 
@@ -233,6 +231,7 @@ header {
 
 .projects__container {
     max-width: 1800px;
+    padding: 0 2rem;
     margin: 0 auto;
 }
 
@@ -240,13 +239,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 15rem 0;
+    padding: 5rem 0;
+    /* margin: 15rem 0; */
 }
 
 .projects__item > * {
-    -webkit-box-shadow: -4px 17px 31px -25px rgba(0, 0, 0, 1);
-    -moz-box-shadow: -4px 17px 31px -25px rgba(0, 0, 0, 1);
-    box-shadow: -4px 17px 31px -25px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: -4px 17px 31px -25px rgb(168, 165, 165);
+    -moz-box-shadow: -4px 17px 31px -25px rgb(168, 165, 165);
+    box-shadow: -4px 17px 31px -25px rgb(168, 165, 165);
 }
 
 .projects__img {
@@ -318,3 +318,147 @@ header {
 }
 
 /* PROJECTS */
+
+/* CONTACT */
+
+.contact {
+    background: white;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #00a78e;
+    font-size: 3.2rem;
+}
+
+.contact__container {
+    display: flex;
+    max-width: 1800px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 5.5rem;
+}
+
+.contact__info {
+    text-align: justify;
+    align-self: center;
+    width: 50%;
+}
+
+.contact__info h3 {
+    font-size: 2.2rem;
+}
+
+.contact__info p {
+    max-width: 60%;
+    font-size: 1.7rem;
+    margin: 5rem 0;
+    color: #acaaaa;
+}
+
+.contact__form {
+    text-align: left;
+}
+
+.contact__form form {
+    color: white;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7rem;
+    background: #00a78e;
+    padding: 0 2rem;
+    height: 500px;
+    border-radius: 4px;
+    justify-content: center;
+    -webkit-box-shadow: -4px 17px 31px -25px rgb(44, 44, 44);
+    -moz-box-shadow: -4px 17px 31px -25px rgb(44, 44, 44);
+    box-shadow: -4px 17px 31px -25px rgb(44, 44, 44);
+}
+
+.contact__form form label {
+    padding: 0.2rem 0;
+    font-size: 1.8rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+    border: 0;
+    background: transparent;
+    outline: none;
+    border-bottom: 1px solid white;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.contact__form textarea {
+    background: #017a681a;
+}
+
+.contact__form *::placeholder {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.contact__form button {
+    width: 100px;
+    padding: 1rem 1.5rem;
+    color: black;
+    background: white;
+    border-radius: 3px;
+    margin-top: 1rem;
+}
+
+.contact__form form :not(:last-child) {
+    outline: none;
+}
+
+.contact__form form h3 {
+    margin-bottom: 2rem;
+}
+
+/* CONTACT */
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 5rem 0;
+}
+footer h2 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}
+
+footer h2 span {
+    color: #00a78e;
+}
+
+.footer__links {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+}
+
+.footer__links a {
+    margin: 0 1rem;
+}
+
+.footer__links a:hover {
+    color: #00a78e;
+    cursor: pointer;
+}
+
+footer h3 {
+    font-size: 2.2rem;
+}
+
+.footer__nav ul {
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+
+.footer__nav ul li {
+    margin: 1rem 2rem;
+}
+
+/* FOOTER */
