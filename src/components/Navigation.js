@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import MobileMenu from './MobileMenu';
 
-export default function navigation() {
+export default function Navigation() {
     return (
         <>
             <nav className="navigation">
                 <h1>
                     Aneudy <span>Adames</span>
                 </h1>
+                <MobileMenu />
                 <ul className="navigation__items">
                     <li>Home</li>
                     <li>About</li>
