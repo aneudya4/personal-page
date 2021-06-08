@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import NavItems from './NavItems';
 import MobileMenu from './MobileMenu';
 
 export default function Navigation() {
@@ -8,14 +9,9 @@ export default function Navigation() {
                 <h1>
                     Aneudy <span>Adames</span>
                 </h1>
-                <MobileMenu />
-                <ul className="navigation__items">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Dev Tips</li>
-                </ul>
+                <NavItems />
             </nav>
+            <MobileMenu />
         </>
     );
 }

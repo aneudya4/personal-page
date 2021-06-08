@@ -1,8 +1,8 @@
 import React, { useState, useLayoutEffect } from 'react';
-import Fade from 'react-reveal/Fade';
-
+import NavItems from './NavItems';
 const MobileMenu = () => {
-    const [isActive, setIsActive] = useState(false);
+    const [isActive, setIsActive] = useState(true);
+
     useLayoutEffect(() => {
         if (isActive) {
             document.querySelector('body').style.overflow = ' hidden';
@@ -19,13 +19,11 @@ const MobileMenu = () => {
                 id="menu"
             />
 
-            <div className="overlay">
-                <ul className="overlay__navigation__items">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Dev Tips</li>
-                </ul>
+            <div className="mobile__nav__overlay">
+                {/* <h1>
+                    Aneudy <span>Adames</span>
+                </h1> */}
+                <NavItems setIsActive={setIsActive} />
             </div>
         </div>
     );
