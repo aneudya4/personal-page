@@ -12,15 +12,6 @@ export default function Footer() {
                 <a>G</a>
             </div>
             <h3>a4aneudy@gmail.com</h3>
-
-            <nav className="footer__nav">
-                <ul>
-                    <li>Home</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
-                    <li>Dev Tips</li>
-                </ul>
-            </nav>
         </footer>
     );
 }

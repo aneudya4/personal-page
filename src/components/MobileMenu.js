@@ -1,7 +1,7 @@
 import React, { useState, useLayoutEffect } from 'react';
 import NavItems from './NavItems';
 const MobileMenu = () => {
-    const [isActive, setIsActive] = useState(true);
+    const [isActive, setIsActive] = useState(false);
 
     useLayoutEffect(() => {
         if (isActive) {

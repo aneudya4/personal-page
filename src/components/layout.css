@@ -17,6 +17,12 @@ html {
 }
 body {
     background-color: #f9f9f9;
+    /* padding: 0;
+    margin: 0; */
+}
+main {
+    width: 100%;
+    margin: 0 auto;
 }
 
 a,
@@ -53,6 +59,7 @@ header {
     display: flex;
     justify-content: space-between;
     z-index: 100;
+    position: fixed;
 }
 
 .navigation h1 {
@@ -136,11 +143,11 @@ header {
     z-index: 2;
     top: 0;
     left: -1500px;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: #00a78e;
     background: rgba(0, 167, 142, 0.9);
-    position: absolute;
+    position: fixed;
     transition: left ease 0.5s;
 }
 
@@ -337,7 +344,7 @@ header {
 
 .projects__container {
     max-width: 1800px;
-    /* padding: 0 2rem; */
+    padding: 0 2rem;
     margin: 0 auto;
 }
 
@@ -348,7 +355,7 @@ header {
 
     /* justify-content: space-around; */
     /* padding: 5rem 0; */
-    /* margin: 15rem 0; */
+    margin: 15rem 0;
 }
 
 .projects__item > * {
@@ -391,9 +398,10 @@ header {
 .projects__info p {
     text-align: justify;
     margin: auto 0;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: lighter;
     /* max-width: 80%; */
+    padding: 2rem;
     color: #acaaaa;
 }
 
@@ -401,10 +409,15 @@ header {
     display: flex;
     text-align: center;
     justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.projects__stack li:not(:last-of-type) {
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .projects__stack li {
-    margin-right: 3rem;
     font-size: 1.5rem;
 }
 
@@ -472,7 +485,7 @@ header {
 .contact__form form {
     color: white;
     max-width: 400px;
-    min-width: 250px;
+    min-width: 200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -596,7 +609,7 @@ footer h3 {
     }
 
     .navigation {
-        /* position: static; */
+        position: static;
         background: none;
         display: flex;
         max-width: 2400px;
@@ -658,6 +671,10 @@ footer h3 {
 
     .about__info p {
         max-width: 70%;
+    }
+
+    .projects__item {
+        margin-top: 0;
     }
 
     .contact__container {
