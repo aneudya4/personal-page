@@ -1,5 +1,4 @@
 import React from 'react';
-import svgImg from '../images/coding.svg';
 export default function Banner() {
     return (
         <section className="banner">
@@ -17,9 +16,7 @@ export default function Banner() {
                 </div>
             </div>
             <div className="banner__right">
-                <div className="banner__img-container">
-                    <img src={svgImg} />
-                </div>
+                <div className="banner__img-container"></div>
             </div>
         </section>
     );

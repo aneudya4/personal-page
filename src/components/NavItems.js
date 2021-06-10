@@ -16,7 +16,7 @@ const NavItems = ({ setIsActive }) => {
         <ul className="navigation__items">
             {navSections.map(section => {
                 return (
-                    <li>
+                    <li key={section}>
                         <Link
                             activeClass="active"
                             onClick={handleOnClick}

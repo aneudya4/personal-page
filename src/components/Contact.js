@@ -43,7 +43,7 @@ export default function Contact() {
                             cols="30"
                             rows="10"
                             required
-                            spellcheck="false"
+                            spellCheck="false"
                         />
 
                         <button className="btn" type="submit">

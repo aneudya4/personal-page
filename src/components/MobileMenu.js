@@ -14,15 +14,12 @@ const MobileMenu = () => {
     return (
         <div className="mobile__nav">
             <button
-                className={isActive && 'open'}
+                className={isActive ? 'open' : null}
                 onClick={() => setIsActive(!isActive)}
                 id="menu"
             />
 
             <div className="mobile__nav__overlay">
-                {/* <h1>
-                    Aneudy <span>Adames</span>
-                </h1> */}
                 <NavItems setIsActive={setIsActive} />
             </div>
         </div>
