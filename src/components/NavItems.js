@@ -32,7 +32,15 @@ const NavItems = ({ setIsActive }) => {
                 );
             })}
             <li>
-                <a>Dev Tips</a>
+                <a
+                    aria-label="Github"
+                    title="Github"
+                    rel="noopener"
+                    target="_blank"
+                    href="https://github.com/aneudya4"
+                >
+                    Dev Tips
+                </a>
             </li>
         </ul>
     );

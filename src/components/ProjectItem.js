@@ -4,7 +4,10 @@ const ProjectsItem = () => {
     return (
         <div className="projects__item ">
             <div className="projects__img">
-                <img src="https://ik.imagekit.io/aneudyimages/binge-hp_xm0yUUHiq.webp" />
+                <img
+                    alt="project-img"
+                    src="https://ik.imagekit.io/aneudyimages/binge-hp_xm0yUUHiq.webp"
+                />
             </div>
 
             <div className="projects__info">
