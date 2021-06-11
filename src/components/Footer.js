@@ -37,7 +37,7 @@ export default function Footer() {
                     <AiFillGithub />
                 </a>
             </div>
-            <h3>!a4aneudy@gmail.com</h3>
+            <h3>a4aneudy@gmail.com</h3>
         </footer>
     );
 }
