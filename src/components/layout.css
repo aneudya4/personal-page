@@ -140,7 +140,7 @@ header {
 }
 
 .mobile__nav__overlay {
-    z-index: 2;
+    z-index: 102;
     top: 0;
     left: -1500px;
     height: 100%;
