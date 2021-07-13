@@ -342,13 +342,12 @@ header {
     flex-basis: 50%;
     max-width: 800px;
     border-radius: 0.3rem;
-    object-fit: cover;
-    height: 400px;
     align-self: center;
+    height: 400px;
 }
 
 .projects__img img {
-    object-fit: cover;
+    object-fit: context-box;
     height: 100%;
 }
 
@@ -375,6 +374,9 @@ header {
     font-size: 1.5rem;
     font-weight: lighter;
     color: #acaaaa;
+}
+.projects__stack {
+    margin-top: auto;
 }
 
 .projects__stack ul {
