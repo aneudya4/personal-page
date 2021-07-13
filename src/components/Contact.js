@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaEnvelope } from 'react-icons/fa';
 
 export default function Contact() {
     return (
@@ -14,8 +15,15 @@ export default function Contact() {
                         get back to you!
                     </p>
 
-                    <a title="Email Client" href="mailto:a4aneudy@gmail.com">
-                        Say Hello
+                    <a
+                        aria-label="email"
+                        title="Email Client"
+                        rel="noopener"
+                        target="_blank"
+                        href="mailto:a4aneudy@gmail.com"
+                    >
+                        <FaEnvelope />
+                        Email me
                     </a>
                 </div>
                 <div className="contact__form">

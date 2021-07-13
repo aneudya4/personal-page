@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaLinkedinIn } from 'react-icons/fa';
-import { AiOutlineTwitter, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { AiOutlineTwitter, AiFillGithub } from 'react-icons/ai';
 
 export default function Footer() {
     return (
