@@ -253,7 +253,6 @@ header {
 /* ABOUT ME  */
 .about {
     background-color: white;
-    padding: 2rem;
 }
 
 .about__container {
@@ -264,7 +263,6 @@ header {
     flex-basis: 50%;
     align-self: center;
     transform: skewY(10deg);
-    margin-right: 1rem;
     z-index: 1;
 }
 
@@ -276,7 +274,7 @@ header {
 
 .about__info {
     flex: 1;
-    /* padding: 0 2rem; */
+    padding: 2rem;
 }
 
 .about__info h2 {
@@ -291,7 +289,6 @@ header {
     font-size: 1.8rem;
     font-weight: lighter;
     color: #acaaaa;
-    margin: 0 auto;
 }
 
 .about__info p:first-of-type {
