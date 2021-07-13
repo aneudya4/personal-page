@@ -670,7 +670,7 @@ footer h3 {
     .about__info p {
         max-width: 70%;
     }
-    .projects__item:nth-child(odd) > .projects__img {
+    .projects__container .react-reveal:nth-child(odd) .projects__img {
         order: 2;
     }
 
