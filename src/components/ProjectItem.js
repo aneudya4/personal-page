@@ -5,8 +5,11 @@ const ProjectsItem = () => {
         <div className="projects__item ">
             <div className="projects__img">
                 <img
-                    alt="project-img"
+                    loading="lazy"
+                    width="450"
+                    height="450"
                     src="https://ik.imagekit.io/aneudyimages/binge-hp_xm0yUUHiq.webp"
+                    alt="Binge app"
                 />
             </div>
 
