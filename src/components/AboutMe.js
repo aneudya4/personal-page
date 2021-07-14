@@ -15,8 +15,8 @@ export default function AboutMe() {
                     <p>
                         Hello! I'm Aneudy Adames, a front-end
                         developer/marketing cloud developer with the Ksquare
-                        Group. I work with HTML, CSS, and JavaScript. I also
-                        have experience with
+                        Group. I work with <span>HTML</span>, <span>CSS</span>,
+                        and <span>JavaScript</span>. I also have experience with
                         <span> ReactJS</span>, <span>NodeJS</span>,
                         <span> ExpressJS</span>, and <span>PostgreSQL</span>. I
                         have a strong background in customer service which gives
