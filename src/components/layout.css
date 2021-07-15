@@ -264,7 +264,7 @@ header {
     margin: 0 auto;
 }
 .about__img {
-    display: none;
+    display: none !important;
     position: relative;
     align-self: center;
     border: 0.5rem solid #00a78e;
