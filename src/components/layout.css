@@ -44,11 +44,13 @@ img {
 
 header {
     display: flex;
+    align-items: flex-start;
 }
 
 /* NAVIGATION */
 .navigation {
     background-color: White;
+
     width: 100%;
     top: 0;
     left: 0;
@@ -612,12 +614,14 @@ footer h2 span {
     }
 
     .navigation {
-        position: static;
+        position: absolute;
         background: transparent;
+        top: -10px;
         display: flex;
         max-width: 2400px;
         justify-content: space-around;
         margin: 0 auto;
+        padding: 3rem;
     }
 
     .navigation .navigation__items {

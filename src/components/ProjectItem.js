@@ -14,6 +14,7 @@ const ProjectsItem = () => {
                 aspectRatio={4 / 3}
                 height={450}
                 width={650}
+                transformOptions={{ fit: 'cover', cropFocus: 'attention' }}
             />
 
             <div className="projects__info">
