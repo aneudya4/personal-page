@@ -747,7 +747,7 @@ footer h3 {
         align-items: center;
     }
     .about__img {
-        display: block;
+        display: block !important;
         flex-basis: 50%;
         align-self: center;
         /* transform: skewY(10deg); */
