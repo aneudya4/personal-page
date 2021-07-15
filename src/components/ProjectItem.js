@@ -11,7 +11,7 @@ const ProjectsItem = () => {
                 placeholder="dominantColor"
                 objectFit="fill"
                 objectPosition="50% 50%"
-                aspectRatio={3 / 1}
+                aspectRatio={4 / 3}
                 height={450}
                 width={650}
             />
