@@ -44,6 +44,8 @@ img {
 
 header {
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 /* NAVIGATION */
@@ -601,9 +603,9 @@ footer h2 span {
     header {
         position: relative;
         width: 100%;
-        top: -10px;
+        top: -40px;
         padding: 5rem;
-        /* background: blue; */
+        margin: 0 auto;
     }
     #menu {
         display: none;
@@ -614,16 +616,16 @@ footer h2 span {
     }
 
     .navigation {
-        /* position: relative;
-        top: -40px; */
-        position: absolute;
+        position: relative;
+        /* top: -40px; */
+        /* position: absolute; */
         top: 0;
+        /* left: 50%; */
         background: transparent;
-        /* background-color: yellow; */
         display: flex;
         max-width: 2400px;
-        justify-content: space-around;
-        margin: 0 auto;
+        justify-content: center !important;
+        margin: 0 auto !important;
     }
 
     .navigation .navigation__items {
