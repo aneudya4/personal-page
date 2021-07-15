@@ -152,7 +152,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    justify-content: center;
     height: 100vh;
 }
 
@@ -209,6 +208,7 @@ header {
     flex-direction: column;
     margin-top: 4rem;
     justify-content: center;
+    /* align-items: center; */
     height: 100%;
     max-width: 1400px;
 }
@@ -595,12 +595,9 @@ footer h3 {
     }
 
     header {
-        padding: 2rem 5rem;
-    }
-
-    header {
-        position: absolute;
+        position: relative;
         width: 100%;
+        padding: 5rem;
     }
     #menu {
         display: none;
@@ -612,7 +609,7 @@ footer h3 {
 
     .navigation {
         position: static;
-        background: none;
+        background: transparent;
         display: flex;
         max-width: 2400px;
         justify-content: space-around;
@@ -622,14 +619,17 @@ footer h3 {
     .navigation .navigation__items {
         display: flex;
         margin-left: auto;
+        height: 100%;
         color: #f9f9f9;
         justify-content: space-around;
     }
 
     .navigation__items li {
+        align-self: center !important;
         font-size: 1.9rem;
         white-space: nowrap;
         margin-left: 3rem;
+        margin-bottom: 0;
     }
 
     .mobile__nav__overlay {
@@ -640,7 +640,12 @@ footer h3 {
         background: #00a78e;
         max-width: 1600px;
         padding: 0 2rem;
-        justify-content: center !important;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -110px;
+        left: 0;
     }
 
     .banner__right {
@@ -652,14 +657,6 @@ footer h3 {
         height: 100%;
     }
 
-    .banner__img-container {
-        width: 100%;
-    }
-
-    .banner__img-container img {
-        display: block;
-        width: 100%;
-    }
     .banner__left {
         flex-basis: 50%;
         margin: 0 auto;
@@ -673,7 +670,8 @@ footer h3 {
     }
 
     .banner__info p {
-        max-width: 850px;
+        max-width: 650px;
+        font-size: 1.8rem;
     }
 
     .banner__btn {

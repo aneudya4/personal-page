@@ -24,6 +24,7 @@ export default function Banner() {
                     src="../images/office-4.svg"
                     placeholder="tracedSVG"
                     className="banner__img-container"
+                    alt="developer"
                 />
             </div>
         </section>
