@@ -272,10 +272,6 @@ header {
     margin-left: 2rem;
     overflow: visible !important;
 }
-/* .about__img div:first-of-type {
-    overflow: visible !important;
-
-} */
 
 .about__img img,
 .about__img source {
@@ -750,15 +746,9 @@ footer h3 {
         align-items: center;
     }
     .about__img {
-        display: block;
+        display: block !important;
         flex-basis: 50%;
         align-self: center;
-        /* transform: skewY(10deg); */
-    }
-
-    .about__img div picture img,
-    .about__img div picture source {
-        /* width: 70%; */
     }
 
     .about__info p {
