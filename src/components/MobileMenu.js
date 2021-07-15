@@ -14,6 +14,7 @@ const MobileMenu = () => {
     return (
         <div className="mobile__nav">
             <button
+                aria-label="hamburger-button"
                 className={isActive ? 'open' : null}
                 onClick={() => setIsActive(!isActive)}
                 id="menu"
