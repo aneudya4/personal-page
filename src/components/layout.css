@@ -743,7 +743,7 @@ footer h3 {
     .about__container {
         display: flex;
         max-width: 1400px;
-        height: 50vh;
+        padding: 8rem 0;
         align-items: center;
     }
     .about__img {
