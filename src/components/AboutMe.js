@@ -10,6 +10,7 @@ export default function AboutMe() {
                     alt="developer"
                     className="about__img"
                     placeholder="tracedSVG"
+                    layout="constrained"
                 />
 
                 <div className="about__info">
