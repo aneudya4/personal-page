@@ -5,16 +5,13 @@ import { AiOutlineTwitter, AiFillGithub } from 'react-icons/ai';
 export default function Footer() {
     return (
         <footer className="footer">
-            <h2>
-                Aneudy <span>Adames</span>
-            </h2>
             <div className="footer__links">
                 <a
                     aria-label="LinkedIn"
                     title="LinkedIn"
                     rel="noopener"
                     target="_blank"
-                    href="https://www.linkedin.com/in/aneudy-adames-600441158/"
+                    href="https://www.linkedin.com/in/aneudy-adames/"
                 >
                     <FaLinkedinIn />
                 </a>
@@ -37,7 +34,13 @@ export default function Footer() {
                     <AiFillGithub />
                 </a>
             </div>
-            <h3>a4aneudy@gmail.com</h3>
+            <h2>
+                Aneudy <span>Adames</span>
+            </h2>
+
+            <div className="footer__copyright">
+                <p> Copyright © {new Date().getFullYear()} Aneudy Adames</p>
+            </div>
         </footer>
     );
 }
