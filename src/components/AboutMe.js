@@ -5,14 +5,14 @@ export default function AboutMe() {
     return (
         <section className="about">
             <div className="about__container">
-                <StaticImage
-                    src="../images/about-me.svg"
-                    alt="developer"
-                    className="about__img"
-                    placeholder="tracedSVG"
-                    layout="constrained"
-                />
-
+                <div className="about__img">
+                    <StaticImage
+                        src="../images/about-me.svg"
+                        alt="developer"
+                        placeholder="tracedSVG"
+                        layout="constrained"
+                    />
+                </div>
                 <div className="about__info">
                     <h2 className="">About Me</h2>
 
