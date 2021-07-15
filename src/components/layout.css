@@ -268,12 +268,16 @@ header {
     flex-basis: 50%;
     position: relative;
     align-self: center;
+    border: 0.5rem solid #00a78e;
     transform: skewY(10deg);
+    overflow: visible;
+    margin-left: 2rem;
 }
 
-.about__img img {
+.about__img picture img,
+.about__img picture source {
+    transform: skewY(-10deg) !important;
     display: block;
-    transform: skewY(-10deg);
     max-width: 70%;
 }
 
@@ -747,15 +751,14 @@ footer h3 {
         align-items: center;
     }
     .about__img {
-        border: 0.5rem solid #00a78e;
         display: block;
         flex-basis: 50%;
         align-self: center;
-        border: 0.5rem solid #00a78e;
-        transform: skewY(10deg);
+        /* transform: skewY(10deg); */
     }
 
-    .about__img img {
+    .about__img img,
+    .about__img source {
         width: 70%;
     }
 

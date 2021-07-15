@@ -1,13 +1,16 @@
 import React from 'react';
-import svgImg from '../images/about-me.svg';
+import { StaticImage } from 'gatsby-plugin-image';
 
 export default function AboutMe() {
     return (
         <section className="about">
             <div className="about__container">
-                <div className="about__img">
-                    <img src={svgImg} alt="svg" />
-                </div>
+                <StaticImage
+                    src="../images/about-me.svg"
+                    alt="developer"
+                    className="about__img"
+                    placeholder="tracedSVG"
+                />
 
                 <div className="about__info">
                     <h2 className="">About Me</h2>

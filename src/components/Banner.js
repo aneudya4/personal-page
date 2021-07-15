@@ -1,5 +1,6 @@
 import React from 'react';
-import img from '../images/office-4.svg';
+import { StaticImage } from 'gatsby-plugin-image';
+
 export default function Banner() {
     return (
         <section className="banner">
@@ -19,9 +20,11 @@ export default function Banner() {
                 </div>
             </div>
             <div className="banner__right">
-                <div className="banner__img-container">
-                    <img src={img} alt="react" />
-                </div>
+                <StaticImage
+                    src="../images/office-4.svg"
+                    placeholder="tracedSVG"
+                    className="banner__img-container"
+                />
             </div>
         </section>
     );
