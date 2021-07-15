@@ -265,12 +265,10 @@ header {
 }
 .about__img {
     display: none;
-    /* flex-basis: 50%; */
     position: relative;
     align-self: center;
     border: 0.5rem solid #00a78e;
-    /* transform: skewY(10deg); */
-    background-color: #00a78e;
+    transform: skewY(10deg);
     margin-left: 2rem;
 }
 .about__img div:first-of-type {
@@ -280,7 +278,7 @@ header {
 .about__img img,
 .about__img source {
     width: 70% !important;
-    /* transform: skewY(-10deg) !important; */
+    transform: skewY(-10deg) !important;
 }
 
 .about__info {
