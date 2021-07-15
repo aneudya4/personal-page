@@ -10,6 +10,7 @@ export default function Banner() {
                     <h2>
                         Aneudy <span>Adames</span>
                     </h2>
+                    <p>Full-Stack Web Developer</p>
                     <p>
                         a web developer based in NYC with a passion for building
                         high-quality, thoughtful, and intuitive web

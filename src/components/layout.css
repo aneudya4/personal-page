@@ -229,6 +229,11 @@ header {
     font-size: inherit;
     display: inline-block;
 }
+.banner__info p:first-of-type {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 
 .banner__info p {
     font-size: 2.3rem;
