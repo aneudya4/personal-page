@@ -191,6 +191,7 @@ header {
 /* BANNER */
 .banner {
     display: flex;
+    justify-content: center;
     height: 50vh;
     margin: 0 auto;
     background: #00a78e;
@@ -617,10 +618,7 @@ footer h2 span {
 
     .navigation {
         position: relative;
-        /* top: -40px; */
-        /* position: absolute; */
         top: 0;
-        /* left: 50%; */
         background: transparent;
         display: flex;
         max-width: 2400px;
@@ -647,19 +645,20 @@ footer h2 span {
     .mobile__nav__overlay {
         display: none;
     }
-    .banner {
+
+    .banner__container {
         display: flex;
         background: #00a78e;
         max-width: 1600px;
         padding: 0 2rem;
         height: 100%;
         justify-content: center;
+        justify-items: space-around;
         align-items: center;
         position: relative;
         top: -100px;
         left: 0;
     }
-
     .banner__right {
         flex: 1;
         flex-basis: 50%;
@@ -674,7 +673,6 @@ footer h2 span {
         margin: 0 auto;
         text-align: left;
         display: flex;
-        justify-content: center;
     }
 
     .banner__info {
@@ -688,6 +686,9 @@ footer h2 span {
 
     .banner__btn {
         margin: 2rem 0 0 0;
+    }
+    .about {
+        margin-top: -10rem;
     }
 
     .about__info p {
