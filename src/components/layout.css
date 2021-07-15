@@ -264,21 +264,23 @@ header {
     margin: 0 auto;
 }
 .about__img {
-    display: none !important;
-    flex-basis: 50% !important;
+    display: none;
+    /* flex-basis: 50%; */
     position: relative;
     align-self: center;
     border: 0.5rem solid #00a78e;
-    transform: skewY(10deg);
+    /* transform: skewY(10deg); */
+    background-color: #00a78e;
     margin-left: 2rem;
 }
 .about__img div:first-of-type {
     overflow: visible !important;
 }
 
-.about__img picture img,
-.about__img picture source {
-    transform: skewY(-10deg) !important;
+.about__img img,
+.about__img source {
+    width: 70% !important;
+    /* transform: skewY(-10deg) !important; */
 }
 
 .about__info {
@@ -748,15 +750,15 @@ footer h3 {
         align-items: center;
     }
     .about__img {
-        display: block !important;
+        display: block;
         flex-basis: 50%;
         align-self: center;
         /* transform: skewY(10deg); */
     }
 
-    .about__img img,
-    .about__img source {
-        width: 70%;
+    .about__img div picture img,
+    .about__img div picture source {
+        /* width: 70%; */
     }
 
     .about__info p {
