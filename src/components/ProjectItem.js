@@ -1,17 +1,17 @@
 import React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const ProjectsItem = () => {
     return (
         <div className="projects__item ">
-            <div className="projects__img">
-                <img
-                    loading="lazy"
-                    width="450"
-                    height="450"
-                    src="https://ik.imagekit.io/aneudyimages/binge-hp_xm0yUUHiq.webp"
-                    alt="Binge app"
-                />
-            </div>
+            <StaticImage
+                src="https://ik.imagekit.io/aneudyimages/binge-hp_xm0yUUHiq.webp"
+                alt="binge-app"
+                className="projects__img"
+                placeholder="dominantColor"
+                objectFit="fill"
+                objectPosition="50% 50%"
+            />
 
             <div className="projects__info">
                 <h3>Binged</h3>
