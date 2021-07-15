@@ -264,13 +264,13 @@ header {
     margin: 0 auto;
 }
 .about__img {
-    display: none;
+    display: none !important;
     flex-basis: 50%;
     position: relative;
     align-self: center;
     border: 0.5rem solid #00a78e;
     transform: skewY(10deg);
-    overflow: visible;
+    overflow: visible !important;
     margin-left: 2rem;
 }
 
@@ -278,7 +278,6 @@ header {
 .about__img picture source {
     transform: skewY(-10deg) !important;
     display: block;
-    max-width: 70%;
 }
 
 .about__info {
