@@ -265,7 +265,7 @@ header {
 }
 .about__img {
     display: none !important;
-    flex-basis: 50%;
+    flex-basis: 50% !important;
     position: relative;
     align-self: center;
     border: 0.5rem solid #00a78e;
