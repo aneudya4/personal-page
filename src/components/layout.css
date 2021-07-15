@@ -270,10 +270,12 @@ header {
     border: 0.5rem solid #00a78e;
     transform: skewY(10deg);
     margin-left: 2rem;
-}
-.about__img div:first-of-type {
     overflow: visible !important;
 }
+/* .about__img div:first-of-type {
+    overflow: visible !important;
+
+} */
 
 .about__img img,
 .about__img source {
