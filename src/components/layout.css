@@ -656,7 +656,7 @@ footer h2 span {
         justify-content: center;
         align-items: center;
         position: relative;
-        /* top: -130px; */
+        top: -100px;
         left: 0;
     }
 
