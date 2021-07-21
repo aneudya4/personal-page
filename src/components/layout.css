@@ -20,7 +20,6 @@ main {
     width: 100%;
     margin: 0 auto;
     background: #00a78e;
-    /* background: red; */
 }
 
 a,
@@ -319,7 +318,7 @@ header {
 
 .projects {
     text-align: center;
-    padding: 6rem;
+    padding: 2rem;
     background-color: #f9f9f9;
 }
 
@@ -365,7 +364,7 @@ header {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 1rem 1rem 1rem;
     background-color: white;
 }
 
@@ -391,15 +390,17 @@ header {
     display: flex;
     text-align: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .projects__stack li:not(:last-of-type) {
-    margin-right: 1.5rem;
+    margin-right: 0.8rem;
 }
 
 .projects__stack li {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .projects__links {
@@ -712,6 +713,13 @@ footer h2 span {
     .projects__info p {
         max-width: 600px;
     }
+
+    /* .projects__stack ul {
+  
+        justify-content: center;
+    
+    
+    } */
 
     .contact__container {
         display: flex;

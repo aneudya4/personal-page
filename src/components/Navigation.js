@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import NavItems from './NavItems';
 import MobileMenu from './MobileMenu';
 

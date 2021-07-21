@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 import Fade from 'react-reveal/Fade';
 
 import Layout from '../components/layout';
@@ -12,7 +11,7 @@ import Footer from '../components/Footer';
 
 const IndexPage = () => {
     return (
-        <Fade>
+        <Fade duration={1100}>
             <Layout>
                 <SEO title="Home" />
                 <Banner />

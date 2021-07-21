@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState, useLayoutEffect, useEffect } from 'react';
 import NavItems from './NavItems';
 const MobileMenu = () => {
     const [isActive, setIsActive] = useState(false);
