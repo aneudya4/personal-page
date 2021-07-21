@@ -6,7 +6,8 @@ export default function Projects() {
     return (
         <section className="projects">
             <h2>
-                <span>Latest</span> Projects
+                {'<'}
+                <span>Latest</span> Projects {'/>'}
             </h2>
             <div className="projects__container">
                 {[1, 2, 3].map((p, index) => {

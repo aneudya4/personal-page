@@ -31,7 +31,7 @@ const NavItems = ({ setIsActive }) => {
                     </li>
                 );
             })}
-            <li>
+            {/* <li>
                 <a
                     aria-label="Github"
                     title="Github"
@@ -41,7 +41,7 @@ const NavItems = ({ setIsActive }) => {
                 >
                     Dev Tips
                 </a>
-            </li>
+            </li> */}
         </ul>
     );
 };

@@ -4,7 +4,9 @@ import { FaEnvelope } from 'react-icons/fa';
 export default function Contact() {
     return (
         <section className="contact">
-            <h2>Contact</h2>
+            <h2>
+                {'<'}Contact {'/>'}
+            </h2>
             <div className="contact__container">
                 <div className="contact__info">
                     <h3>Get In Touch</h3>

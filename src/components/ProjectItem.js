@@ -30,11 +30,12 @@ const ProjectsItem = () => {
 
                 <div className="projects__stack">
                     <ul>
-                        <li>React</li>
-                        <li>React</li>
-                        <li>React</li>
-                        <li>React</li>
-                        <li>React</li>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>PostgreSQL</li>
+                        <li>Redux</li>
+                        <li>CSS</li>
+                        <li>Express.js</li>
                     </ul>
                 </div>
 

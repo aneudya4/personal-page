@@ -13,9 +13,8 @@ export default function Banner() {
                         </h2>
                         <p>Full-Stack Web Developer</p>
                         <p>
-                            a web developer based in NYC with a passion for
-                            building high-quality, thoughtful, and intuitive web
-                            applications.
+                            Passionate about building high-quality, thoughtful,
+                            and intuitive web applications.
                         </p>
 
                         <button className="btn banner__btn">Hire Me</button>

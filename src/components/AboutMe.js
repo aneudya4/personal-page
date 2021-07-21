@@ -14,7 +14,9 @@ export default function AboutMe() {
                 />
 
                 <div className="about__info">
-                    <h2 className="">About Me</h2>
+                    <h2 className="">
+                        {'<'}About Me {'/>'}
+                    </h2>
                     <p>
                         Hello! I'm Aneudy Adames, a front-end
                         developer/marketing cloud developer with the Ksquare

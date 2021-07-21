@@ -7,7 +7,8 @@ export default function Navigation() {
         <>
             <nav className="navigation">
                 <h1>
-                    Aneudy <span>Adames</span>
+                    <span>{'<'}</span>
+                    Aneudy <span>Adames {'/>'}</span>
                 </h1>
                 <NavItems />
             </nav>
