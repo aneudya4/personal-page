@@ -185,10 +185,6 @@ a:hover {
 	color: var(--text);
 }
 
-.hero__inner .hero__lede:first-of-type {
-	margin-bottom: 0.85rem;
-}
-
 .hero__lede a {
 	font-weight: 500;
 }
