@@ -128,7 +128,7 @@ a:hover {
 }
 
 .hero__inner {
-	max-width: var(--content-max);
+	max-width: var(--terminal-max);
 	margin: 0 auto;
 }
 
@@ -181,7 +181,6 @@ a:hover {
 
 .hero__lede {
 	margin: 0 0 2rem;
-	max-width: 38rem;
 	font-size: 1.0625rem;
 	color: var(--text);
 }
