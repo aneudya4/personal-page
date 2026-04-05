@@ -1,55 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./thankyou.styles.css" />
-    <link rel="canonical" href="https://aneudyadames.dev/thankyou" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon/favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon/favicon.ico"
-    />
-    <link rel="manifest" href="./images/favicon/site.webmanifest" />
-    <title>Aneudy Adames | Full Stack Developer</title>
-  </head>
-  <body>
-    <section class="form-submission">
-      <div class="svg-container"></div>
-      <div class="message">
-        <h1>Thank you!</h1>
-        <p>Thanks for sending me an email.I will be in contact with you! :)</p>
-        <a href="/">Back to home</a>
-      </div>
-    </section>
-    <script>
-      const theme = JSON.parse(localStorage.getItem('theme'));
-      const html = document.querySelector('html');
-      if (theme) {
-        if (!theme.dark) {
-          html.setAttribute('data-theme', 'light');
-        } else {
-          html.setAttribute('data-theme', 'dark');
-        }
-      }
-    </script>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Thank you. Your message was sent to Aneudy Adames."
+		/>
+		<meta name="author" content="Aneudy Adames" />
+		<meta name="theme-color" content="#0d9488" />
+		<meta name="robots" content="noindex, nofollow" />
+		<link rel="canonical" href="https://aneudyadames.dev/thankyou.html" />
+
+		<title>Message sent | Aneudy Adames</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="/styles.css" />
+
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/images/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/images/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/images/favicon/favicon-16x16.png"
+		/>
+		<link rel="icon" href="/images/favicon/favicon.ico" sizes="any" />
+		<link rel="manifest" href="/images/favicon/site.webmanifest" />
+	</head>
+	<body class="thanks-page">
+		<a class="skip-link" href="#main">Skip to content</a>
+
+		<header class="site-header">
+			<nav class="site-nav" aria-label="Primary">
+				<ul class="site-nav__list">
+					<li><a href="/#about">About Me</a></li>
+					<li><a href="/#contact">Contact Me</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="main" class="thanks-page__main">
+			<div class="thanks-card">
+				<h1 class="thanks-card__title">Thank you!</h1>
+				<p class="thanks-card__text">
+					Your message was sent successfully. I’ll get back to you soon.
+				</p>
+				<p class="thanks-card__actions">
+					<a href="/">← Back to home</a>
+				</p>
+			</div>
+		</main>
+
+		<footer class="site-footer">
+			<p>
+				<small>© <span id="y"></span> Aneudy Adames</small>
+			</p>
+		</footer>
+
+		<script>
+			document.getElementById("y").textContent =
+				String(new Date().getFullYear());
+		</script>
+	</body>
 </html>

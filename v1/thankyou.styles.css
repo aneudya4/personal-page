@@ -29,7 +29,7 @@ body {
 }
 .svg-container {
   height: 35vh;
-  background: url('./images/email.svg'), var(--bg-primary-color);
+  background: url('../images/email.svg'), var(--bg-primary-color);
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 7px;

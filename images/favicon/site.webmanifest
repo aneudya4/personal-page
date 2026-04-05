@@ -1,6 +1,6 @@
 {
-  "name": "ideas",
-  "short_name": "ideas",
+  "name": "Aneudy Adames",
+  "short_name": "Aneudy Adames",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": "https://aneudyadames.dev",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#0d9488",
+  "background_color": "#f8f9fa"
 }

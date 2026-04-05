@@ -1,3 +1,5 @@
-# https://www.robotstxt.org/robotstxt.html
+# https://aneudyadames.dev: allow indexing of public pages; form thank-you is noindex in HTML.
 User-agent: *
-Disallow:
+Allow: /
+
+Sitemap: https://aneudyadames.dev/sitemap.xml
