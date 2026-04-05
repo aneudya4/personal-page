@@ -310,6 +310,18 @@ a:hover {
 	flex-shrink: 0;
 }
 
+.terminal__submit-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
 .terminal__input-line {
 	display: flex;
 	align-items: center;
@@ -571,6 +583,10 @@ a:hover {
 .contact-email:hover {
 	text-decoration: underline;
 	text-underline-offset: 2px;
+}
+
+.social-nav {
+	margin: 0;
 }
 
 .social-list {
